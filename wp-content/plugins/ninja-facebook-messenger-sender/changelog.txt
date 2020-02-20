@@ -1,0 +1,74 @@
+14/02/2020: (version 2.0.1)
+- Fixed: Subcriber Date error
+
+21/10/2019: (version 2.0)
+- Removed: Locale, Gender, Timezone, Graph Token
+- Fixed: List pages
+- Fixed: Small bugs
+
+8/1/2019: (version 1.8.2)
+- Fixed: Some database errors
+
+28/12/2018: (version 1.8.1)
+- Fixed: Error when connect FB with new app
+
+30/11/2018: (version 1.8)
+- Improved: Save purchase code
+- Fixed: Error #100 The parameter subscribed_fields is required.
+
+11/04/2017: (version 1.7)
+- Updated: New Facebook SDK
+- Improved: Send message, filter, settings
+- Improved: UI/UX
+- Fixed: Some bugs
+
+06/25/2017: (version 1.6)
+- Added: Hooks for developers
+- Fixed: Adding web hook
+
+03/18/2017: (version 1.5.5)
+- Get unlimited pages
+
+03/10/2017: (version 1.5.4)
+- Added Unsubscribe button
+
+03/06/2017: (version 1.5.3)
+- Improve some function
+- Added category’s description
+
+02/28/2017: (version 1.5.2)
+- Fixed: small bug with the filter.
+
+ 02/25/2017: (version 1.5.1)
+- Fixed: class Locale not found.
+
+ 02/17/2017: (version 1.5)
+- Added: Categories for subscribers
+- Added: First Name and Last Name tag
+- Added: 1000+ emotion icons support for Facebook
+- Added: Video tutorial get custom token https://www.youtube.com/watch?v=Zb8YWXlXo-k
+- Added: Some small features such as subscribers count, process bar, etc
+- Improved: Sending screen
+- Improved: UX/UI
+- Fixed: Some small bugs
+
+ 02/06/2017: (version 1.4)
+- Send messages with custom token
+- Send messages to selected users
+- Search users
+
+ 01/28/2017: (version 1.3.1)
+- Fixed: Send messages
+
+01/27/2017: (version 1.3)
+- Added: Reconnect to Facebook function
+- Fixed: Important bugs
+
+01/26/2017: (version 1.2)
+- Fixed: Some small bugs
+
+01/25/2017: (version 1.1)
+- Fixed: 404 error
+
+01/21/2017: (version 1.0)
+- Version 1.0 Initial Release

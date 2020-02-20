@@ -1,0 +1,511 @@
+{
+    "key": "group_593be7a6c2017",
+    "title": "Shop Settings",
+    "private": true,
+    "fields": [
+        {
+            "key": "field_591b4f20ed84e",
+            "label": "Shop Layout",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5937e0a51b48cexmod155",
+            "label": "",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "message": "<p class=\"message\"><span class=\"icon ion-information-circled\"></span> <b>Note:</b> these settings apply to all shop elements of your website. You can override some global setting for individual shop pages.</p>",
+            "new_lines": "",
+            "esc_html": 0
+        },
+        {
+            "key": "field_592d60bf8b3f9",
+            "label": "Product hover effect",
+            "name": "global_shop_item_hover_type",
+            "type": "select",
+            "instructions": "Choose hover effect type for shop items",
+            "required": 0,
+            "conditional_logic": 0,
+            "choices": {
+                "type1": "Image Scaling",
+                "type2": "Color Overlay",
+                "type3": "Greyscale",
+                "type4": "Image Parallax"
+            },
+            "default_value": "type1",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_593be7afs51sfg",
+            "label": "Product images in gallery",
+            "name": "global_woocommerce_product_images_count",
+            "type": "text",
+            "instructions": "Choose the number of product images for single product gallery",
+            "required": 0,
+            "conditional_logic": 0,
+            "default_value": "2",
+            "placeholder": "",
+            "prepend": "",
+            "append": "images",
+            "formatting": "html",
+            "maxlength": ""
+        },
+        {
+            "key": "field_593be8a6dfc31e",
+            "label": "Masonry layout",
+            "name": "global_woocommerce_masonry_layout",
+            "type": "true_false",
+            "instructions": "Enable masonry layout for product items",
+            "required": 0,
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        },
+
+        
+
+        {
+            "key": "field_5937a0a52148cexmod23s1f",
+            "label": "<h4>Number of Products</h4>",
+            "name": "",
+            "type": "message"
+        },
+
+        {
+            "key": "field_58383c7ed01ae_shop_count",
+            "label": "Product items per page",
+            "name": "global_woocommerce_products_on_page",
+            "type":"text",
+            "instructions": "Choose the number of product items per page",
+            "required": 0,
+            "append":"products",
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58539i234317ae",
+                        "operator": "!=",
+                        "value": "type_4"
+                    }
+                ]
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "maxlength": "2",
+            "placeholder": ""
+        },
+        {
+            "key": "field_58383c7ed02ae",
+            "label": "Product items per row",
+            "name": "global_woocommerce_products_in_row",
+            "type":"ohio_ecommerce_columns",
+            "instructions": "Choose the number of product items per row",
+            "default_value": {
+                "large": "3",
+                "medium": "2",
+                "small": "2"
+            }
+        },
+        {
+            "key": "field_5937a0a52148cexmod23s1c",
+            "label": "<h4>Grid Appear Effect</h4>",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "message": "",
+            "new_lines": "",
+            "esc_html": 0
+        }, 
+        {
+            "key": "field_592d60af8a7feq21",
+            "label": "Grid animation",
+            "name": "global_woocommerce_page_animation_type",
+            "type": "select",
+            "instructions": "Choose grid animation type",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_593be8a6dfc31e",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "choices": {
+                "default": "Disable animation",
+                "sync": "Sync animation",
+                "async": "Async animation"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "default",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_592d60af8ac17d31sra",
+            "label": "Grid animation effect",
+            "name": "global_woocommerce_page_animation_effect",
+            "type": "select",
+            "instructions": "Choose product items appear effect",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_592d60af8a7feq21",
+                        "operator": "!=",
+                        "value": "default"
+                    }
+                ]
+            ],
+            "choices": {
+                "fade-up": "Fade up",
+                "fade-left": "Fade left",
+                "fade-right": "Fade right",
+                "slide-up": "Slide up",
+                "flip-up": "Flip up",
+                "zoom-in": "Zoom in"
+            },
+            "default_value": [
+                "fade-up"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+
+        {
+            "key": "field_5937a0amod23s1f",
+            "label": "<h4>Product Cards</h4>",
+            "name": "",
+            "type": "message"
+        },
+
+        {
+            "key": "field_592d60af8b80cf5",
+            "label": "Boxed layout",
+            "name": "global_product_items_boxed_style",
+            "type": "true_false",
+            "instructions": "Use boxed layout for product items",
+            "required": 0,
+            "conditional_logic": 0,
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No",
+            "message": "",
+            "default_value": 1
+        },
+        {
+            "key": "field_59gb29bda32b3as15",
+            "label": "Product card background color",
+            "name": "global_woocommerce_shop_title_wrap_background_color",
+            "type": "ohio_color",
+            "instructions": "Choose product card background color",
+            "conditional_logic": [
+                [
+                    {
+                        "field" : "field_592d60af8b80cf5",
+                        "operator" : "==",
+                        "value" : "1"
+                    }
+                ]
+            ],
+            "required": 0,
+            "default_value": ""
+        },
+        {
+            "key": "field_5ghpd60af8ac1asf1245gf",
+            "label": "Grid alignment",
+            "name": "global_woocommerce_text_alignment",
+            "type": "select",
+            "instructions": "Choose text alignment for product items",
+            "required": 0,
+            "conditional_logic": 0,
+            "choices": {
+                "left": "Left",
+                "center": "Center",
+                "right": "Right"
+            },
+            "default_value": [
+                "left"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_59gfsdfsda32b3as15",
+            "label": "Quickview button",
+            "name": "global_woocommerce_quickview_button",
+            "type": "true_false",
+            "instructions": "Enable quickview feature on product items",
+            "required": 0,
+            "conditional_logic": 0,
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        },
+        {
+            "key": "field_59gb29bda32b3a",
+            "label": "Sale tag background color",
+            "name": "global_woocommerce_shop_sale_tag_background_color",
+            "type": "ohio_color",
+            "instructions": "Choose sale tag background color",
+            "conditional_logic": 0,
+            "required": 0,
+            "default_value": ""
+        },
+        {
+            "key": "field_59gb29bda32b3b",
+            "label": "Out of stock tag background color",
+            "name": "global_woocommerce_shop_out_stock_tag_background_color",
+            "type": "ohio_color",
+            "instructions": "Choose out of stock tag background color",
+            "conditional_logic": 0,
+            "required": 0,
+            "default_value": ""
+        },
+        {
+            "key": "field_593f4haf12422a",
+            "label": "Product title typography",
+            "name": "global_woocommerce_shop_product_title_typo",
+            "type": "ohio_typo",
+            "instructions": "Set up typography for product grid titles",
+            "required": 0,
+            "conditional_logic": 0,
+            "add_theme_inherited": false
+        },
+        {
+            "key": "field_59gfsdfsda433as15",
+            "label": "Product category visibility",
+            "name": "global_woocommerce_shop_category_visibility",
+            "type": "true_false",
+            "instructions": "Show product categories on product items",
+            "required": 0,
+            "conditional_logic": 0,
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        },
+        {
+            "key": "field_593f4haf12422b",
+            "label": "Product category typography",
+            "name": "global_woocommerce_shop_product_category_typo",
+            "type": "ohio_typo",
+            "instructions": "Set up typography for product grid category",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field" : "field_59gfsdfsda433as15",
+                        "operator" : "==",
+                        "value" : "1"
+                    }
+                ]
+            ],
+            "add_theme_inherited": false
+        },
+        {
+            "key": "field_59gfsdfsga433as15",
+            "label": "Product price visibility",
+            "name": "global_woocommerce_shop_price_visibility",
+            "type": "true_false",
+            "instructions": "Show the price on product items",
+            "required": 0,
+            "conditional_logic": 0,
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        },
+        {
+            "key": "field_59af4haf12422c",
+            "label": "Product price typography",
+            "name": "global_woocommerce_shop_product_price_typo",
+            "type": "ohio_typo",
+            "instructions": "Set up typography for product grid price",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field" : "field_59gfsdfsga433as15",
+                        "operator" : "==",
+                        "value" : "1"
+                    }
+                ]
+            ],
+            "add_theme_inherited": false
+        },
+        {
+            "key": "field_593be7a6d2429",
+            "label": "Shop Page",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "placement": "top",
+            "endpoint": 0
+        },
+        
+        {
+            "key": "field_59fb433sbgd33615",
+            "label": "Breadcrumbs slug",
+            "name": "global_woocommerce_breadcrumbs_slug",
+            "type": "text",
+            "instructions": "Enter custom text for breadcrumbs slug",
+            "required": 0,
+            "conditional_logic": 0,
+            "new_lines": "",
+            "esc_html": 0
+        },
+        
+        {
+            "key": "field_593be7fasa6dfq41",
+            "label": "Custom content position",
+            "name": "global_shop_content_position",
+            "type": "select",
+            "instructions": "Choose WPBakery Page Builder page content position",
+            "required": 0,
+            "conditional_logic": false,
+            "choices": {
+                "top": "Top - Before products",
+                "bottom": "Bottom - After products"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "inherit",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_5937a0a52148cexmod23s152c",
+            "label": "<h4>Shop Page Pagination</h4>",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "message": "",
+            "new_lines": "",
+            "esc_html": 0
+        },
+        {
+            "key": "field_59374323b383615",
+            "label": "Pagination",
+            "name": "global_woocommerce_pagination_type",
+            "type": "select",
+            "instructions": "Choose pagination type for shop page",
+            "required": 0,
+            "conditional_logic": 0,
+            "choices": {
+                "simple": "Simple",
+                "standard": "Standard",
+                "lazy_scroll": "Lazy load",
+                "lazy_button": "Load more"
+            },
+            "default_value": [
+                "simple"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_593743237383615",
+            "label": "Pagination position",
+            "name": "global_woocommerce_pagination_position",
+            "type": "select",
+            "instructions": "Choose pagination position for shop page",
+            "required": 0,
+            "conditional_logic": 0,
+            "choices": {
+                "left": "Left",
+                "center": "Center",
+                "right": "Right"
+            },
+            "default_value": [
+                "left"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+
+        {
+            "key": "field_593beba6d4b64",
+            "label": "Other Settings",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_593743234457tr",
+            "label": "Cart icon",
+            "name": "global_woocommerce_cart_icon",
+            "type": "true_false",
+            "instructions": "Show cart icon on your website",
+            "default_value": 1,
+            "ui": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "theme-general-woocommerce"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": ""
+}

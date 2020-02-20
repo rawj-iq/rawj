@@ -1,0 +1,431 @@
+{
+    "key": "group_5946362bf373c5",
+    "title": "Other Settings",
+    "private": true,
+    "fields": [
+        {
+            "key": "field_542244d4313bf",
+            "label": "Plugins Settings",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "placement": "top",
+            "endpoint": 0
+        },
+
+        {
+            "key": "field_5937a0a521481ebmod23",
+            "label": "<h4>Google Maps Settings</h4>",
+            "name": "",
+            "type": "message"
+        },
+
+        {
+            "key": "field_592fe13500023",
+            "label": "Google Maps API key",
+            "name": "global_google_maps_api_key",
+            "type": "text",
+            "instructions": "Paste your Google Maps API key here.<br> <a target=\"_blank\" href=\"https:\/\/developers.google.com\/maps\/documentation\/javascript\/get-api-key\">How to get your API key<\/a>",
+            "required": 0,
+            "conditional_logic": 0,
+            "default_value": "",
+            "placeholder": "Paste your key",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_542244d4343bf",
+            "label": "Snippets & Tracking Code",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5937e0a32b48cexmod151",
+            "label": "",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "message": "<p class=\"message\">Note, that you can update the theme without losing the code injected.</p>",
+            "new_lines": "",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5937e3a43b383415",
+            "label": "Header JavaScript injection",
+            "name": "global_header_javascript",
+            "type": "ohio_code",
+            "instructions": "Paste your Google Analytics, Facebook Pixel or custom tracking code",
+            "required": 0,
+            "conditional_logic": 0,
+            "default_value": "",
+            "language": "javascript"
+        },
+        {
+            "key": "field_5937e4a43b383415",
+            "label": "Footer JavaScript injection",
+            "name": "global_footer_javascript",
+            "type": "ohio_code",
+            "instructions": "Paste your Google Analytics, Facebook Pixel or custom tracking code",
+            "required": 0,
+            "conditional_logic": 0,
+            "default_value": "",
+            "language": "javascript"
+        },
+        {
+            "key": "field_591b002d481fcff56",
+            "label": "Social Networks",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_59229bda366f4mod",
+            "label": "Social network links",
+            "name": "global_header_menu_social_links",
+            "type": "repeater",
+            "instructions": "Add links to your social networks",
+            "required": 0,
+            "conditional_logic": 0,
+            "collapsed": "",
+            "min": 0,
+            "max": 6,
+            "layout": "table",
+            "button_label": "+ Add social network",
+            "sub_fields": [
+                {
+                    "key": "field_59229bda7b686moddd",
+                    "label": "Direction",
+                    "name": "social_network",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "choices": {
+                        "facebook": "Facebook",
+                        "twitter": "Twitter",
+                        "instagram": "Instagram",
+                        "dribbble": "Dribbble",
+                        "github": "GitHub",
+                        "linkedin": "LinkedIn",
+                        "vimeo": "Vimeo",
+                        "youtube": "YouTube",
+                        "vk": "Vkontakte",
+                        "behance": "Behance",
+                        "tumblr": "Tumblr",
+                        "flickr": "Flickr",
+                        "reddit": "Reddit",
+                        "snapchat": "Snapchat",
+                        "whatsapp": "WhatsApp",
+                        "quora": "Quora",
+                        "vine": "Vine",
+                        "digg": "Digg",
+                        "foursquare": "Foursquare"
+                    },
+                    "default_value": [
+
+                    ],
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "return_format": "value",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_59229bda7ba5ajhghjhg",
+                    "label": "URL",
+                    "name": "url",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "default_value": "",
+                    "placeholder": ""
+                }
+            ]
+        },
+        {
+            "key": "field_592fe1350013rfw4g23",
+            "label": "Social network type",
+            "name": "global_social_network_type",
+            "type": "radio",
+            "instructions": "Choose social networks type",
+            "required": 0,
+            "conditional_logic": 0,
+            "choices": {
+                "letters": "Letters",
+                "icons": "Icons"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "letters",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_l05mnk93kid43naf2",
+            "label": "Social networks typography",
+            "name": "global_page_social_networks_typo",
+            "type": "ohio_typo",
+            "instructions": "Set up typography styles for social networks",
+            "required": 0,
+            "conditional_logic": 0,
+            "add_theme_inherited": false
+        },
+        {
+            "key": "field_542244d4343hg",
+            "label": "Notification",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_592fe13500qwedqwxs",
+            "label": "Notification visibility",
+            "name": "global_notification_bar",
+            "type": "true_false",
+            "instructions": "Enable notification on your website",
+            "required": 0,
+            "conditional_logic": 0,
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        },
+        {
+            "key": "field_592fe13500hjbh",
+            "label": "Notification details",
+            "name": "global_notification_text",
+            "type": "text",
+            "instructions": "Paste your notification text here",
+            "required": 0,
+            "conditional_logic": [
+                {
+                    "field": "field_592fe13500qwedqwxs",
+                    "operator": "==",
+                    "value": "1"
+                }
+            ],
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_592fe135002542tgs",
+            "label": "Notification details link",
+            "name": "global_notification_link",
+            "type": "true_false",
+            "instructions": "Enable notification link",
+            "required": 0,
+            "conditional_logic": [
+                {
+                    "field": "field_592fe13500qwedqwxs",
+                    "operator": "==",
+                    "value": "1"
+                }
+            ],
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        },
+        {
+            "key": "field_592feа125350234df2",
+            "label": "Notification link",
+            "name": "global_notification_link",
+            "type": "link",
+            "instructions": "Set up notification link",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_592fe135002542tgs",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "message": "",
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        },
+        {
+            "key": "field_592fe13500asdas",
+            "label": "Notification button",
+            "name": "global_notification_button",
+            "type": "true_false",
+            "instructions": "Enable notification button",
+            "required": 0,
+            "conditional_logic": [
+                {
+                    "field": "field_592fe13500qwedqwxs",
+                    "operator": "==",
+                    "value": "1"
+                }
+            ],
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        },
+        {
+            "key": "field_592feа125350kasdgh",
+            "label": "Button link",
+            "name": "global_notification_button_link",
+            "type": "link",
+            "instructions": "Set up button link",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_592fe13500asdas",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "message": "",
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        },
+        {
+            "key": "field_583592feа12asdf4asfasf",
+            "label": "Notification background",
+            "name": "global_notification_background_color",
+            "type":"ohio_color",
+            "instructions": "Choose background color for notification",
+            "required": 0,
+            "conditional_logic": [
+                {
+                    "field": "field_592fe13500qwedqwxs",
+                    "operator": "==",
+                    "value": "1"
+                }
+            ],
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_583592feа12asdf435e",
+            "label": "Expires",
+            "name": "global_notification_expires",
+            "type":"text",
+            "instructions": "After expiry, user will see the notification bar again",
+            "required": 0,
+            "append":"days",
+            "conditional_logic": [
+                {
+                    "field": "field_592fe13500qwedqwxs",
+                    "operator": "==",
+                    "value": "1"
+                }
+            ],
+            "default_value": "360",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "maxlength": "3",
+            "placeholder": ""
+        },
+
+        {
+            "key": "field_598s31s15af5g9t",
+            "label": "<h4>Typography Settings</h4>",
+            "name": "",
+            "type": "message",
+            "conditional_logic": [
+                {
+                    "field": "field_592fe13500qwedqwxs",
+                    "operator": "==",
+                    "value": "1"
+                }
+            ]
+        },
+        {
+            "key": "field_583592feа12as98holrv",
+            "label": "Notification details typography",
+            "name": "global_notification_details_typo",
+            "type":"ohio_typo",
+            "instructions": "Set up typography styles for notification details",
+            "required": 0,
+            "conditional_logic": [
+                {
+                    "field": "field_592fe13500qwedqwxs",
+                    "operator": "==",
+                    "value": "1"
+                }
+            ]
+        },
+
+        {
+            "key": "field_542244d4343ch",
+            "label": "Options Cache",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_592fe13500cch",
+            "label": "Use options cache",
+            "name": "global_options_cache",
+            "type": "true_false",
+            "instructions": "Cache allows to avoid repeated queries to the database, thereby speeding up your site. Turn off this setting to reset and stop cache",
+            "required": 0,
+            "conditional_logic": 0,
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "theme-general-other"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": ""
+}

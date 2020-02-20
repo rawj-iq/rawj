@@ -1,0 +1,689 @@
+{
+    "key": "group_59391f245236d2",
+    "title": "Project Settings",
+    "private": true,
+    "fields": [
+        {
+			"key": "field_5937e0a52b48cexmod33",
+			"label": "",
+			"name": "",
+			"type": "message",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"message": "<p class=\"message\"><span class=\"icon ion-information-circled\"></span> <b>Note:</b> to find more porfolio options navigate to global settings <b>Theme Settings > Portfolio Settings</b></p>",
+			"new_lines": "",
+			"esc_html": 0
+		},
+		{
+			"key": "field_593dbedc58835",
+			"label": "Project page layout",
+			"name": "project_layout_type",
+			"type": "image_option",
+			"instructions": "Choose layout type for project page",
+			"required": 0,
+			"conditional_logic": 0,
+			"image_option_value": [
+				{
+					"name": "inherit",
+					"description": "Use from Theme Settings",
+					"src": "acf__image_inherited.svg"
+				},
+				{
+                    "name": "type_1",
+                    "description": "Details with Left Gallery",
+                    "src": "acf__image_27.svg"
+                },
+                {
+                    "name": "type_2",
+                    "description": "Details with Right Gallery",
+                    "src": "acf__image_26.svg"
+                },
+                {
+                    "name": "type_3",
+                    "description": "Split Screen Left Gallery",
+                    "src": "acf__image_29.svg"
+                },
+                {
+                    "name": "type_4",
+                    "description": "Split Screen Right Gallery",
+                    "src": "acf__image_28.svg"
+                },
+                {
+                    "name": "type_5",
+                    "description": "Slider with Details",
+                    "src": "acf__image_30.svg"
+                },
+                {
+                    "name": "type_6",
+                    "description": "Slider with Custom Details",
+                    "src": "acf__image_31.svg"
+                },
+                {
+                    "name": "type_7",
+                    "description": "Details with Bottom Gallery",
+                    "src": "acf__image_32.svg"
+                },
+                {
+                    "name": "type_8",
+                    "description": "Asymmetric with Custom Details",
+                    "src": "acf__image_33.svg"
+                }
+			],
+			"default_value": "inherit"
+		},
+		{
+			"key": "field_592fd66622a41amodagg",
+			"label": "WPBakery content position",
+			"name": "project_custom_content_position",
+			"type": "select",
+			"instructions": "Choose custom content position",
+			"required": 0,
+			"conditional_logic": [
+				[
+					{
+						"field": "field_593dbedc5a7fe",
+						"operator": "!=",
+						"value": "none"
+					},
+					{
+						"field": "field_593dbedc58835",
+						"operator": "!=",
+						"value": "type_1"
+					}
+				]
+			],
+			"choices": {
+				"inherit": "Use from Theme Settings",
+				"top": "Top - Before content",
+				"after_description": "Center - After description",
+				"bottom": "Bottom - After content"
+			},
+			"allow_null": 0,
+			"other_choice": 0,
+			"save_other_choice": 0,
+			"default_value": "top",
+			"return_format": "value"
+        },
+        {
+			"key": "field_593dbedc5a7fe",
+			"label": "Navigation",
+			"name": "project_show_navigation",
+			"type": "radio",
+			"instructions": "Choose portfolio navigation type",
+			"required": 0,
+			"conditional_logic": 0,
+			"choices": {
+				"inherit": "Use from Theme Settings",
+				"none": "Without navigation",
+				"prev_n_next": "Next and preview"
+			},
+			"allow_null": 0,
+			"other_choice": 0,
+			"save_other_choice": 0,
+			"default_value": [
+				"inherit"
+			],
+			"layout": "horizontal",
+			"return_format": "value"
+		},
+		{
+			"key": "field_593dbedc5b780",
+			"label": "Double width",
+			"name": "project_style_in_grid",
+			"type": "radio",
+			"instructions": "Make double width for this portfolio item",
+			"required": 0,
+			"conditional_logic": 0,
+			"choices": {
+				"default": "Default - 1 column width",
+				"2col": "Wide - 2 column width"
+			},
+			"allow_null": 0,
+			"other_choice": 0,
+			"save_other_choice": 0,
+			"default_value": "default",
+			"layout": "horizontal",
+			"return_format": "value"
+		},
+        {
+            "key": "field_5937a0a24fa34hnof",
+            "label": "<h4>Slider Settings</h4>",
+            "name": "",
+            "conditional_logic": [
+                [
+					{
+						"field": "field_593dbedc58835",
+						"operator": "!=",
+						"value": "inherit"
+					},
+                    {
+                        "field": "field_593dbedc58835",
+                        "operator": "!=",
+                        "value": "type_1"
+                    },
+                    {
+                        "field": "field_593dbedc58835",
+                        "operator": "!=",
+                        "value": "type_2"
+                    },
+                    {
+                        "field": "field_593dbedc58835",
+                        "operator": "!=",
+                        "value": "type_3"
+                    },                    {
+                        "field": "field_593dbedc58835",
+                        "operator": "!=",
+                        "value": "type_4"
+                    }
+                ]
+            ],
+            "type": "message"
+        },
+
+        {
+            "key": "field_59fb4b093lgdfse2",
+            "label": "Navigation visibility",
+            "name": "project_nav_visibility",
+            "type": "inherited_checkbox",
+            "instructions": "Show navigation buttons on the project slider",
+            "required": 0,
+            "conditional_logic": [
+                [
+					{
+						"field": "field_593dbedc58835",
+						"operator": "!=",
+						"value": "inherit"
+					},
+                    {
+                        "field": "field_593dbedc58835",
+                        "operator": "!=",
+                        "value": "type_1"
+                    },
+                    {
+                        "field": "field_593dbedc58835",
+                        "operator": "!=",
+                        "value": "type_2"
+                    },
+                    {
+                        "field": "field_593dbedc58835",
+                        "operator": "!=",
+                        "value": "type_3"
+                    },                    {
+                        "field": "field_593dbedc58835",
+                        "operator": "!=",
+                        "value": "type_4"
+                    }
+                ]
+            ],
+            "custom_labels": {
+                "inherit": "Use from Theme Settings",
+                "show": "Show",
+                "hide": "Hide"
+            },
+            "message": "",
+            "default_value": "inherit",
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5923k4obl393bw",
+            "label": "Bullets visibility",
+            "name": "project_bullets_visibility",
+            "type": "inherited_checkbox",
+            "instructions": "Show bullets bar on the project slider",
+            "required": 0,
+            "conditional_logic": [
+                [
+					{
+						"field": "field_593dbedc58835",
+						"operator": "!=",
+						"value": "inherit"
+					},
+                    {
+                        "field": "field_593dbedc58835",
+                        "operator": "!=",
+                        "value": "type_1"
+                    },
+                    {
+                        "field": "field_593dbedc58835",
+                        "operator": "!=",
+                        "value": "type_2"
+                    },
+                    {
+                        "field": "field_593dbedc58835",
+                        "operator": "!=",
+                        "value": "type_3"
+                    },                    {
+                        "field": "field_593dbedc58835",
+                        "operator": "!=",
+                        "value": "type_4"
+                    }
+                ]
+            ],
+            "custom_labels": {
+                "inherit": "Use from Theme Settings",
+                "show": "Show",
+                "hide": "Hide"
+            },
+            "message": "",
+            "default_value": "inherit",
+            "ui": 1,
+            "ui_on_text": "",
+			"ui_off_text": "",
+			"return_format": "value"
+        },
+        {
+            "key": "field_59fb4w1kbjg2jir1f3",
+            "label": "Bullets type",
+            "name": "project_bullets_type",
+            "type": "select",
+            "instructions": "Choose bullets or number pagination on the project slider",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5923k4obl393bw",
+                        "operator": "==",
+                        "value": 1
+                    }
+                ]
+            ],
+            "choices": {
+                "pagination": "Pagination",
+                "bullets": "Bullets"          
+            },
+            "default_value": [
+                "pagination"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_59fb434rgth4kn0ythj994",
+            "label": "Loop mode",
+            "name": "project_loop_mode",
+            "type": "inherited_checkbox",
+            "instructions": "Enable loop mode for the project slider",
+            "required": 0,
+            "conditional_logic": [
+                [
+					{
+						"field": "field_593dbedc58835",
+						"operator": "!=",
+						"value": "inherit"
+					},
+                    {
+                        "field": "field_593dbedc58835",
+                        "operator": "!=",
+                        "value": "type_1"
+                    },
+                    {
+                        "field": "field_593dbedc58835",
+                        "operator": "!=",
+                        "value": "type_2"
+                    },
+                    {
+                        "field": "field_593dbedc58835",
+                        "operator": "!=",
+                        "value": "type_3"
+                    },                    {
+                        "field": "field_593dbedc58835",
+                        "operator": "!=",
+                        "value": "type_4"
+                    }
+                ]
+            ],
+            "custom_labels": {
+                "inherit": "Use from Theme Settings",
+                "yes": "Enable",
+                "no": "Disable"
+            },
+            "message": "",
+            "default_value": "inherit",
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_594gerhkn56ok2pop",
+            "label": "Autoplay mode",
+            "name": "project_autoplay_mode",
+            "type": "inherited_checkbox",
+            "instructions": "Enable autoplay mode for the project slider",
+            "required": 0,
+            "conditional_logic": [
+                [
+					{
+						"field": "field_593dbedc58835",
+						"operator": "!=",
+						"value": "inherit"
+					},
+                    {
+                        "field": "field_593dbedc58835",
+                        "operator": "!=",
+                        "value": "type_1"
+                    },
+                    {
+                        "field": "field_593dbedc58835",
+                        "operator": "!=",
+                        "value": "type_2"
+                    },
+                    {
+                        "field": "field_593dbedc58835",
+                        "operator": "!=",
+                        "value": "type_3"
+                    },                    {
+                        "field": "field_593dbedc58835",
+                        "operator": "!=",
+                        "value": "type_4"
+                    }
+                ]
+            ],
+            "custom_labels": {
+                "inherit": "Use from Theme Settings",
+                "yes": "Enable",
+                "no": "Disable"
+            },
+            "message": "",
+            "default_value": "inherit",
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_59erbvdfdkbk4io2okn1nj",
+            "label": "Autoplay interval timeout",
+            "name": "project_autoplay_interval",
+            "type": "number",
+            "instructions": "Set up autoplay interval timeout for the project slider",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_594gerhkn56ok2pop",
+                        "operator": "==",
+                        "value": 1
+                    }
+                ]
+            ],
+            "default_value": 5000,
+            "placeholder": "",
+            "prepend": "",
+            "append": "Ms"
+        },
+        {
+            "key": "field_egetrgwelnl54oopkgpo",
+            "label": "Mouse wheel scroll",
+            "name": "project_mousewheel_mode",
+            "type": "inherited_checkbox",
+            "instructions": "Enable mouse wheel scroll for the project slider",
+            "required": 0,
+            "conditional_logic": [
+                [
+					{
+						"field": "field_593dbedc58835",
+						"operator": "!=",
+						"value": "inherit"
+					},
+                    {
+                        "field": "field_593dbedc58835",
+                        "operator": "!=",
+                        "value": "type_1"
+                    },
+                    {
+                        "field": "field_593dbedc58835",
+                        "operator": "!=",
+                        "value": "type_2"
+                    },
+                    {
+                        "field": "field_593dbedc58835",
+                        "operator": "!=",
+                        "value": "type_3"
+                    },                    {
+                        "field": "field_593dbedc58835",
+                        "operator": "!=",
+                        "value": "type_4"
+                    }
+                ]
+            ],
+            "custom_labels": {
+                "inherit": "Use from Theme Settings",
+                "yes": "Enable",
+                "no": "Disable"
+            },
+            "message": "",
+            "default_value": "inherit",
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_egetrgwery53k93jvh8rpos",
+            "label": "Overlay color",
+            "name": "project_color_overlay",
+            "type": "ohio_color",
+            "instructions": "Choose color overlay for main image",
+            "required": 0,
+            "conditional_logic": [
+                [
+					{
+						"field": "field_593dbedc58835",
+						"operator": "!=",
+						"value": "inherit"
+					},
+                    {
+                        "field": "field_593dbedc58835",
+                        "operator": "!=",
+                        "value": "type_1"
+                    },
+                    {
+                        "field": "field_593dbedc58835",
+                        "operator": "!=",
+                        "value": "type_2"
+                    },
+                    {
+                        "field": "field_593dbedc58835",
+                        "operator": "!=",
+                        "value": "type_3"
+                    },                    {
+                        "field": "field_593dbedc58835",
+                        "operator": "!=",
+                        "value": "type_4"
+                    }
+                ]
+            ],
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5937gj5kn3309b09a",
+            "label": "<h4>Project page typography</h4>",
+            "name": "",
+            "type": "message"
+        },
+        {
+            "key": "field_lk3obp0g0jnf41hnj44",
+            "label": "Project title typography",
+            "name": "project_title_typography",
+            "instructions": "Set up typography styles for title",
+            "type": "ohio_typo",
+            "add_theme_inherited": false
+        },
+        {
+            "key": "field_kg894kg9ckjdj3v04jgi432",
+            "label": "Show project categories?",
+            "name": "project_show_categories",
+            "type": "true_false",
+            "instructions": "If enabled, project categories are shown",
+            "required": 0,
+            "conditional_logic": 0,
+            "ui": 1,
+            "default_value": 1,
+            "new_lines": "",
+            "esc_html": 0
+        },
+        {
+            "key": "field_lnll401kkhn3a34nf41hnj44",
+            "label": "Project category typography",
+            "name": "project_category_typography",
+            "instructions": "Set up typography styles for categories",
+            "type": "ohio_typo",
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_kg894kg9ckjdj3v04jgi432",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "add_theme_inherited": false
+        },
+        {
+            "key": "field_kg894kmb94jkg92f09aoisoj34",
+            "label": "Show project date?",
+            "name": "project_show_date",
+            "type": "true_false",
+            "instructions": "If enabled, project date is shown",
+            "required": 0,
+            "conditional_logic": 0,
+            "ui": 1,
+            "default_value": 1,
+            "new_lines": "",
+            "esc_html": 0
+        },
+        {
+            "key": "field_lnll401kkmr30rkwovkeanf41hnj44",
+            "label": "Project date typography",
+            "name": "project_date_typography",
+            "instructions": "Set up typography styles for date",
+            "type": "ohio_typo",
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_kg894kmb94jkg92f09aoisoj34",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "add_theme_inherited": false
+        },
+        {
+            "key": "field_kg894kg9l3kmgmbklkaj323",
+            "label": "Show project description?",
+            "name": "project_show_description",
+            "type": "true_false",
+            "instructions": "If enabled, project description is shown",
+            "required": 0,
+            "conditional_logic": 0,
+            "ui": 1,
+            "default_value": 1,
+            "new_lines": "",
+            "esc_html": 0
+        },
+        {
+            "key": "field_lnlkh34oofkgm399gk3nnn3",
+            "label": "Project description typography",
+            "name": "project_description_typography",
+            "instructions": "Set up typography styles for description",
+            "type": "ohio_typo",
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_kg894kg9l3kmgmbklkaj323",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "add_theme_inherited": false
+        },
+        {
+            "key": "field_kg894kkb3kdl1o345b5jbkalwbvna",
+            "label": "Show project details?",
+            "name": "project_show_details",
+            "type": "true_false",
+            "instructions": "If enabled, project details are shown",
+            "required": 0,
+            "conditional_logic": 0,
+            "ui": 1,
+            "default_value": 1,
+            "new_lines": "",
+            "esc_html": 0
+        },
+        {
+            "key": "field_lnll401kkmhgope4k3wovkeanf41hnj44",
+            "label": "Project details typography",
+            "name": "project_details_typography",
+            "instructions": "Set up typography styles for details",
+            "type": "ohio_typo",
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_kg894kkb3kdl1o345b5jbkalwbvna",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "add_theme_inherited": false
+        },
+        {
+            "key": "field_kg894kg9l3fgiak400hoalgkk",
+            "label": "Show project link?",
+            "name": "project_show_link",
+            "type": "true_false",
+            "instructions": "If enabled, project link is shown",
+            "required": 0,
+            "conditional_logic": 0,
+            "ui": 1,
+            "default_value": 1,
+            "new_lines": "",
+            "esc_html": 0
+        },
+        {
+            "key": "field_lnlkh34oofk3g90ao1343",
+            "label": "Project link typography",
+            "name": "project_link_typography",
+            "instructions": "Set up typography styles for project link",
+            "type": "ohio_typo",
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_kg894kg9l3fgiak400hoalgkk",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "add_theme_inherited": false
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "ohio_portfolio"
+            }
+        ]
+    ],
+    "menu_order": 1,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": ""
+}

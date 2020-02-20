@@ -1,0 +1,52 @@
+.testimonial {
+	blockquote {
+		margin: 0;
+		padding: 0;
+		border: none;
+		font-size: $font_size_large;
+
+		&:after {
+			display: none;
+		}
+	}
+
+	&-subtitle {
+		margin: 0;
+		font-weight: 600;
+	}
+
+	.author {
+		margin-top: 20px;
+
+		&-name,
+		&-details {
+			margin: 0;
+		}
+	}
+
+	.author-avatar {
+		width: 60px;
+		height: 60px;
+		background-color: $color_fill_light;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		display: inline-block;
+		@include border_radius(50%);
+		overflow: hidden;
+	}
+
+	// Layouts
+
+	&.with-top-avatar {
+		.author-avatar {
+			margin-bottom: 15px;
+		}
+	}
+
+	&.with-middle-avatar {
+		.author-avatar {
+			margin-top: 20px;
+		}
+	}
+}

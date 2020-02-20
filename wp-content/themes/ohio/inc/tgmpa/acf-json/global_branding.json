@@ -1,0 +1,241 @@
+{
+    "key": "group_592d60af343c5",
+    "title": "Branding",
+    "private": true,
+    "fields": [
+        {
+            "key": "field_54229ad4313bf",
+            "label": "Website Logo",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5937e0a52b48cexmod151",
+            "label": "",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "message": "<p class=\"message\"><span class=\"icon ion-information-circled\"></span> <b>Note:</b> these settings apply to all header elements of your website. You can override some global setting for individual pages.</p>",
+            "new_lines": "",
+            "esc_html": 0
+        },
+        {
+            "key": "field_59229bda32383",
+            "label": "Brand logo",
+            "name": "global_page_header_logo_style",
+            "type": "radio",
+            "instructions": "Choose logo type for your website",
+            "required": 0,
+            "conditional_logic": 0,
+            "choices": {
+                "sitename": "Text logo",
+                "image": "Custom image"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "sitename",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_5937e3a52b38cexmod15",
+            "label": "Text logo",
+            "name": "global_page_header_logo_text",
+            "type": "text",
+            "instructions": "Enter the text for your website logo",
+            "conditional_logic": 0
+        },
+        {
+            "key": "field_59256ac3f42ec",
+            "label": "Text logo settings",
+            "name": "global_page_header_sitename_typo",
+            "type": "ohio_typo",
+            "instructions": "Set up typography styles for site name",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59229bda32383",
+                        "operator": "==",
+                        "value": "sitename"
+                    }
+                ]
+            ],
+            "add_theme_inherited": false
+        },
+        {
+            "key": "field_59229bda32f63",
+            "label": "Logo light variant",
+            "name": "global_page_header_logo_image",
+            "type": "clone",
+            "instructions": "Upload light-colored variant. Used for fullscreen menu by default",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59229bda32383",
+                        "operator": "==",
+                        "value": "image"
+                    }
+                ]
+            ],
+            "clone": [
+                "field_5936b2dd92771",
+                "field_5936b357132bf",
+                "field_5936b371132c0"
+            ],
+            "display": "group",
+            "layout": "table",
+            "prefix_label": 0,
+            "prefix_name": 0
+        },
+        {
+            "key": "field_5936add283a9a",
+            "label": "Logo dark variant",
+            "name": "global_page_header_logo_image_dark_variant",
+            "type": "clone",
+            "instructions": "Upload dark-colored variant. Used for scrolled fixed header by default",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59229bda32383",
+                        "operator": "==",
+                        "value": "image"
+                    }
+                ]
+            ],
+            "clone": [
+                "field_5936af24f4b7e",
+                "field_5936afd421bba",
+                "field_5936affb21bbb"
+            ],
+            "display": "group",
+            "layout": "table",
+            "prefix_label": 0,
+            "prefix_name": 0
+        },
+        {
+            "key": "field_5937e1905d075",
+            "label": "Logo by default",
+            "name": "global_page_header_logo_by_default",
+            "type": "select",
+            "instructions": "Choose default logo variant",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59229bda32383",
+                        "operator": "==",
+                        "value": "image"
+                    }
+                ]
+            ],
+            "choices": {
+                "dark_variant": "Dark variant",
+                "light_variant": "Light variant"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "dark_variant",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_5937e1905d075_fixed",
+            "label": "Logo for sticky header",
+            "name": "global_page_header_logo_when_fixed",
+            "type": "select",
+            "instructions": "Choose logo variant for sticky header",
+            "required": 0,
+            "choices": {
+                "dark_variant": "Dark variant",
+                "light_variant": "Light variant",
+                "inherit": "Default logo variant",
+                "custom": "Custom image",
+                "sitename": "Text logo"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "dark_variant",
+            "layout": "vertical",
+            "return_format": "value"
+        },
+        {
+            "key": "field_5936add283a9a_fix",
+            "label": "Logo image for sticky header",
+            "name": "global_page_header_logo_image_fixed_variant",
+            "type": "clone",
+            "instructions": "Upload logo variant for sticky header",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5937e1905d075_fixed",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "clone": [
+                "field_5936af24f4b7e_fix",
+                "field_5936afd421bba_fix",
+                "field_5936affb21bbb_fix"
+            ],
+            "display": "group",
+            "layout": "table",
+            "prefix_label": 0,
+            "prefix_name": 0
+        },
+        {
+            "key": "field_59249ad4313bf",
+            "label": "Other Settings",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5937e3352b38cexmod15",
+            "label": "Favicon",
+            "name": "",
+            "type": "message",
+            "instructions": "Set up favicon for your website. Choose 64x64 px favicon of the PNG format",
+            "required": 0,
+            "conditional_logic": 0,
+            "message": "<br>To set up the favicon for your website navigate to <a target=\"_blank\" href=\"/wp-admin/customize.php\">Appearance Menu</a>",  
+            "new_lines": "",
+            "esc_html": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "theme-general-branding"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": ""
+}

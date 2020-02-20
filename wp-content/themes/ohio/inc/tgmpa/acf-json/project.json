@@ -1,0 +1,238 @@
+{
+    "key": "group_59391f245236d",
+    "title": "Project Details",
+    "private": true,
+    "fields": [
+        {
+            "key": "field_59391f24594ff",
+            "label": "Short description",
+            "name": "project_description",
+            "type": "wysiwyg",
+            "instructions": "Write a short description for this project.",
+            "required": 0,
+            "conditional_logic": 0,
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_59391f24598db",
+            "label": "Media gallery",
+            "name": "project_content",
+            "type": "gallery",
+            "instructions": "Add media files for this project <em>(JPG, PNG, GIF formats are supported)<\/em>.",
+            "required": 0,
+            "conditional_logic": 0,
+            "min": "",
+            "max": "",
+            "insert": "append",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "png, jpg, jpeg, gif"
+        },
+        {
+            "key": "field_59391f24598db5182j",
+            "label": "Featured image",
+            "name": "project_add_featured_to_gallery",
+            "type": "inherited_checkbox",
+            "instructions": "Show featured image in the project lightbox?",
+            "required": 0,
+            "conditional_logic": 0,
+            "default_value": "inherited"
+        },
+        {
+            "key": "field_59391f245a1tra6",
+            "label": "Video",
+            "name": "project_video",
+            "type": "text",
+            "instructions": "Add a video file for this project <em>(YouTube, Vimeo formats are supported)<\/em>.",
+            "required": 0,
+            "conditional_logic": 0,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59391f2459ccd",
+            "label": "Date",
+            "name": "project_date",
+            "type": "date_picker",
+            "instructions": "Choose the project's date.",
+            "required": 0,
+            "conditional_logic": 0,
+            "display_format": "F j, Y",
+            "return_format": "F j, Y",
+            "first_day": 1
+        },
+        {
+            "key": "field_59391f245a0b6",
+            "label": "Task",
+            "name": "project_task",
+            "type": "text",
+            "instructions": "Specify what a challenge you had to overcome working on this project.",
+            "required": 0,
+            "conditional_logic": 0,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59391f245a4b5",
+            "label": "Strategy",
+            "name": "project_strategy",
+            "type": "text",
+            "instructions": "Project strategy <em>(e.g. Brand Strategy, UX Strategy)<\/em> or leave blank.",
+            "required": 0,
+            "conditional_logic": 0,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59391f245a4b51",
+            "label": "Design",
+            "name": "project_design",
+            "type": "text",
+            "instructions": "Project design <em>(e.g. UI/UX Design, Art Direction)<\/em> or leave blank.",
+            "required": 0,
+            "conditional_logic": 0,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59391f245a893",
+            "label": "Client",
+            "name": "project_client",
+            "type": "text",
+            "instructions": "Project client <em>(e.g. Envato)<\/em> or leave blanks.",
+            "required": 0,
+            "conditional_logic": 0,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59391f245b478",
+            "label": "Custom fields",
+            "name": "project_custom_fields",
+            "type": "repeater",
+            "instructions": "Add your own fields <em>(e.g. Tools, Technologies<\/em>).",
+            "required": 0,
+            "conditional_logic": 0,
+            "collapsed": "",
+            "min": 0,
+            "max": 6,
+            "layout": "table",
+            "button_label": "+ Add Field",
+            "sub_fields": [
+                {
+                    "key": "field_59391f246d98c",
+                    "label": "Title",
+                    "name": "project_custom_field_title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_59391f246dd81",
+                    "label": "Value",
+                    "name": "project_custom_field_value",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_59391f245b078",
+            "label": "Project link",
+            "name": "project_open_type",
+            "type": "select",
+            "instructions": "Choose a showcase page for this project.",
+            "required": 0,
+            "conditional_logic": 0,
+            "choices": {
+                "project": "Open a standard project page",
+                "external_target": "Open a project external link",
+                "external_blank": "Open a project external link in a new tab"
+            },
+            "default_value": [
+                "project"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_59391f245ac8a",
+            "label": "Project external link",
+            "name": "project_link",
+            "type": "url",
+            "instructions": "Add a link to the custom project page or live project website.",
+            "required": 0,
+            "conditional_logic": 0,
+            "default_value": "",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "ohio_portfolio"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": ""
+}

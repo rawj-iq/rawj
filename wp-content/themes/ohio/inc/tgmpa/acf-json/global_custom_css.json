@@ -1,0 +1,103 @@
+{
+    "key": "group_5946360af373c5",
+    "title": "Custom CSS",
+    "private": true,
+    "fields": [
+        {
+            "key": "field_542245d4313bf",
+            "label": "General Styles",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_591ac509d4a44",
+            "label": "Custom CSS styles",
+            "name": "global_page_custom_css",
+            "type": "ohio_code",
+            "instructions": "Write your own CSS code here",
+            "required": 0,
+            "conditional_logic": 0,
+            "default_value": "",
+            "placeholder": "Your CSS code goes here",
+            "language": "css"
+        },
+        {
+            "key": "field_5937e0a52b4567mod951",
+            "label": "",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "message": "<p class=\"message\">Note, that you won't lose the CSS written here after updating the theme.</p>",
+            "new_lines": "",
+            "esc_html": 0
+        },
+        {
+            "key": "field_542245d6313bf",
+            "label": "Responsive Styles",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_593743a43b383415",
+            "label": "Desktop devices",
+            "name": "global_page_custom_large_css",
+            "type": "ohio_code",
+            "instructions": "Write your CSS code here <em>(from 1025px)</em>",
+            "required": 0,
+            "conditional_logic": 0,
+            "default_value": "",
+            "language": "css"
+        },
+        {
+            "key": "field_593743a43b373415",
+            "label": "Tablet devices",
+            "name": "global_page_custom_medium_css",
+            "type": "ohio_code",
+            "instructions": "Write your CSS code here <em>(up to 1024px)</em>",
+            "required": 0,
+            "conditional_logic": 0,
+            "default_value": "",
+            "language": "css"
+        },
+        {
+            "key": "field_593743a43b363415",
+            "label": "Mobile devices",
+            "name": "global_page_custom_small_css",
+            "type": "ohio_code",
+            "instructions": "Write your CSS code here <em>(up to 768px)</em>",
+            "required": 0,
+            "conditional_logic": 0,
+            "default_value": "",
+            "language": "css"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "theme-general-custom"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": ""
+}

@@ -1,0 +1,48 @@
+.clb-social {
+	@include spacer40(right);
+    transform-origin: 100% 50%;
+    transform: rotate(-90deg) translate(50%, -50%);
+    margin-right: 0;
+    @include animate();
+
+    &-holder {
+        white-space: nowrap;
+        @include flex_center();
+        list-style: none;
+
+        @include sm_screen() {
+            color: #fff;
+        }
+
+		li {
+			margin: 0px 5px;
+
+            a:after {
+                content: "/";
+                display: inline;
+                padding-left: 10px;
+            }
+
+            &:last-child {
+                a:after {
+                    display: none;
+                }
+            }
+		}
+
+        &.icons {
+            li {
+                padding: 0px 5px;
+                .icon {
+                    transform: rotate(90deg);
+                }
+
+                a {
+                    &:after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

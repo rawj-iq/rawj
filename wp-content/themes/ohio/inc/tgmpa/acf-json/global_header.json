@@ -1,0 +1,1343 @@
+{
+    "key": "group_59229bda27ee2",
+    "title": "Header Settings",
+    "private": true,
+    "fields": [
+        {
+            "key": "field_59229bda313bf",
+            "label": "Header",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5937e0a52b48cexmod15",
+            "label": "",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "message": "<p class=\"message\"><span class=\"icon ion-information-circled\"></span> <b>Note:</b> these settings apply to all header elements of your website. You can override some global setting for individual pages.</p>",
+            "new_lines": "",
+            "esc_html": 0
+        },
+        {
+            "key": "field_59229bda317ae",
+            "label": "Header layout",
+            "name": "global_page_header_menu_style",
+            "type": "image_option",
+            "instructions": "Choose layout type for page's header",
+            "required": 0,
+            "conditional_logic": 0,
+            "image_option_value": [
+                {
+                    "name": "style1",
+                    "description": "Standard",
+                    "src": "acf__image_01.svg"
+                },
+                {
+                    "name": "style2",
+                    "description": "With top logo",
+                    "src": "acf__image_02.svg"
+                },
+                {
+                    "name": "style3",
+                    "description": "With center alignment",
+                    "src": "acf__image_04.svg"
+                },
+                {
+                    "name": "style4",
+                    "description": "With center logo",
+                    "src": "acf__image_05.svg"
+                },
+                {
+                    "name": "style5",
+                    "description": "Sidebar",
+                    "src": "acf__image_06.svg"
+                },
+                {
+                    "name": "style6",
+                    "description": "Sidebar panel",
+                    "src": "acf__image_07.svg"
+                }
+            ],
+            "default_value": "style1"
+        },
+        {
+            "key": "field_59229bda31f95",
+            "label": "Header blank spacer",
+            "name": "global_page_header_add_cap",
+            "type": "true_false",
+            "instructions": "We suggest using this option with transparent and fixed headers",
+            "required": 0,
+            "conditional_logic": 0,
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": 1,
+            "layout": "horizontal",
+            "return_format": "value",
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        },
+        {
+            "key": "field_59229bda31bb0",
+            "label": "Header content wrapper",
+            "name": "global_page_header_menu_use_wrapper",
+            "type": "true_false",
+            "instructions": "Use header content wrapper",
+            "required": 0,
+            "conditional_logic": 0,
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        },
+        {
+            "key": "field_592d3cfcc0e1c",
+            "label": "Header height",
+            "name": "global_page_header_menu_height",
+            "type": "ohio_responsive_height",
+            "instructions": "Set up header height",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59229bda317ae",
+                        "operator": "!=",
+                        "value": "style6"
+                    },
+                    {
+                        "field": "field_59229bda317ae",
+                        "operator": "!=",
+                        "value": "style7"
+                    }
+                ]
+            ],
+            "default_value": ""
+        },
+        {
+            "key": "field_591ac509d1208gbgclrlcfpagjstglgbl64",
+            "label": "Background",
+            "name": "global_page_header_menu",
+            "type": "clone",
+            "instructions": "Choose header background",
+            "required": false,
+            "conditional_logic": false,
+            "clone": [
+                "group_982e082a3bcfcf81b766eaa1ec2df4f11e0f5cd3"
+            ],
+            "display": "group",
+            "layout": "block",
+            "prefix_label": false,
+            "prefix_name": true
+        },
+        {
+            "key": "field_59229bda34745",
+            "label": "Bottom border",
+            "name": "global_page_header_menu_border_visibility",
+            "type": "true_false",
+            "instructions": "Show header bottom border?",
+            "required": 0,
+            "conditional_logic": 0,
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        },
+        {
+            "key": "field_59229bda34f19",
+            "label": "Bottom border type",
+            "name": "global_page_header_menu_border_type",
+            "type": "select",
+            "instructions": "Choose border line style",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59229bda34745",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "choices": {
+                "solid": "Solid",
+                "dashed": "Dashed",
+                "dotted": "Dotted",
+                "double": "Double"
+            },
+            "default_value": [
+                "solid"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_59229bda34b30",
+            "label": "Bottom border color",
+            "name": "global_page_header_menu_border_color",
+            "type": "ohio_color",
+            "instructions": "Choose bottom border color",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59229bda34745",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "default_value": ""
+        },
+        {
+            "key": "field_59224bda313bf",
+            "label": "Sticky Header",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_59229bda3432a",
+            "label": "Sticky header visibility",
+            "name": "global_page_header_menu_fixed",
+            "type": "true_false",
+            "instructions": "Enable sticky header, which is fixed at the top as you scroll",
+            "required": 0,
+            "conditional_logic": 0,
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        },
+        {
+            "key": "field_593743a434383415",
+            "label": "Sticky header on mobile",
+            "name": "global_page_header_mobile_menu_fixed",
+            "type": "true_false",
+            "instructions": "Enable sticky header on mobile devices",
+            "required": 0,
+            "conditional_logic": 0,
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        },
+        {
+            "key": "field_59374453f84415",
+            "label": "Sticky header initial offset",
+            "name": "global_page_header_fixed_initial_offset",
+            "type": "number",
+            "instructions": "Scroll position when sticky header begins to appear <em>(Use pixels)</em>",
+            "required": 0,
+            "conditional_logic": 0,
+            "default_value": "150",
+            "placeholder": "",
+            "prepend": "",
+            "append": "px",
+            "min": 1,
+            "max": 100000,
+            "step": ""
+        },
+        {
+            "key": "field_5937433334383415",
+            "label": "Sticky header height",
+            "name": "global_page_header_fixed_height",
+            "type": "ohio_responsive_height",
+            "instructions": "Set up sticky header height",
+            "required": 0,
+            "conditional_logic": 0
+        },
+        {
+            "key": "field_591ac509d1208gbgclrstckhdrmagjstglgbl64",
+            "label": "Sticky header background",
+            "name": "global_page_header_fixed",
+            "type": "clone",
+            "instructions": "Choose sticky header background",
+            "required": false,
+            "conditional_logic": false,
+            "clone": [
+                "group_982e082a3bcfcf81b766eaa1ec2df4f11e0f5cd3"
+            ],
+            "display": "group",
+            "layout": "block",
+            "prefix_label": false,
+            "prefix_name": true
+        },
+
+        {
+            "key": "field_593s23s15af5g9t",
+            "label": "<h4>Typography Settings</h4>",
+            "name": "",
+            "type": "message"
+        },
+
+        {
+            "key": "field_59229bda33f448347i7a6",
+            "label": "Sticky header typography",
+            "name": "global_page_header_fixed_text_typo",
+            "type": "ohio_typo",
+            "instructions": "Set up typography styles for sticky header",
+            "required": 0,
+            "conditional_logic": 0
+        },
+        {
+            "key": "field_59221bda313bf",
+            "label": "Menu",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_59229bda3374d",
+            "label": "Menu type",
+            "name": "global_page_header_menu_type",
+            "type": "radio",
+            "instructions": "Choose menu type for all pages",
+            "required": 0,
+            "conditional_logic": 0,
+            "choices": {
+                "full": "Extended menu",
+                "hamburger": "Hamburger menu",
+                "both": "Both menus"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "full",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_59229bda31ауеmod",
+            "label": "Extended menu",
+            "name": "global_page_extended_menu",
+            "type": "ohio_menu",
+            "instructions": "Choose from already pre-made menus <em>(Appearance > <a target=\"_blank\" href=\"./nav-menus.php\">Menus</a>)</em>",
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59229bda3374d",
+                        "operator": "!=",
+                        "value": "hamburger"
+                    }
+                ]
+            ],
+            "required": 0,
+            "default_value": ""
+        },
+        {
+            "key": "field_59229asf124а11ауеmod",
+            "label": "Hamburger menu",
+            "name": "global_page_hamburger_menu",
+            "type": "ohio_menu",
+            "instructions": "Choose from already pre-made menus <em>(Appearance > <a target=\"_blank\" href=\"./nav-menus.php\">Menus</a>)</em>",
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59229bda3374d",
+                        "operator": "!=",
+                        "value": "full"
+                    }
+                ]
+            ],
+            "required": 0,
+            "default_value": ""
+        },
+        {
+            "key": "field_59229bsa31d56",
+            "label": "Hamburger menu position",
+            "name": "global_page_header_menu_position",
+            "type": "select",
+            "instructions": "Choose hamburger position for all pages",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59229bda3374d",
+                        "operator": "!=",
+                        "value": "full"
+                    }
+                ]
+            ],
+            "choices": {
+                "left": "Left",
+                "right": "Right"
+            },
+            "default_value": [
+                "left"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_59229bda317ae_modd",
+            "label": "Overlay menu layout",
+            "name": "global_page_fullscreen_menu_style",
+            "type": "image_option",
+            "instructions": "Choose layout type for overlay menu",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59229bda3374d",
+                        "operator": "==",
+                        "value": "hamburger"
+                    }
+
+                ],
+                [
+                    {
+                        "field": "field_59229bda3374d",
+                        "operator": "==",
+                        "value": "both"
+                    }
+                ]
+            ],
+            "choices": {
+                "default": "Standard",
+                "centered": "With center alignment",
+                "split": "Compact"
+            },
+            "image_option_value": [
+                {
+                    "name": "default",
+                    "description": "Standard",
+                    "src": "acf__image_34.svg"
+                },
+                {
+                    "name": "centered",
+                    "description": "With center alignment",
+                    "src": "acf__image_35.svg"
+                },
+                {
+                    "name": "split",
+                    "description": "Compact",
+                    "src": "acf__image_36.svg"
+                }
+            ],
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": [
+                "default"
+            ],
+            "layout": "vertical",
+            "return_format": "value",
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_591ac509d12stglgbl64",
+            "label": "Overlay menu background",
+            "name": "global_page_header_overlay_menu",
+            "type": "clone",
+            "instructions": "Choose navigation overlay background",
+            "required": false,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59229bda3374d",
+                        "operator": "!=",
+                        "value": "full"
+                    },
+                    {
+                        "field": "field_59229bda317ae",
+                        "operator": "!=",
+                        "value": "style3"
+                    },
+                    {
+                        "field": "field_59229bda317ae",
+                        "operator": "!=",
+                        "value": "style4"
+                    },
+                    {
+                        "field": "field_59229bda317ae",
+                        "operator": "!=",
+                        "value": "style5"
+                    }
+                ]
+            ],
+            "clone": [
+                "group_982e082a3bcfcf81b766eaa1ec2df4f11e0f5cd3"
+            ],
+            "display": "group",
+            "layout": "block",
+            "prefix_label": false,
+            "prefix_name": true
+        },
+        {
+            "key": "field_59229bda366f4md1",
+            "label": "Overlay menu details</em>",
+            "name": "global_page_overlay_menu_footer_items_left",
+            "type": "repeater",
+            "instructions": "Add some custom details to the overlay menu <em>(Use HTML code)</em>",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59229bda3374d",
+                        "operator": "==",
+                        "value": "hamburger"
+                    }
+
+                ],
+                [
+                    {
+                        "field": "field_59229bda3374d",
+                        "operator": "==",
+                        "value": "both"
+                    }
+                ]
+            ],
+            "collapsed": "",
+            "min": 0,
+            "max": 3,
+            "layout": "table",
+            "button_label": "+ Add item",
+            "sub_fields": [
+                {
+                    "key": "field_59229bda6c954md3",
+                    "label": "Items list",
+                    "name": "items",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": 150
+                }
+            ]
+        },
+        {
+            "key": "field_59229bda33f44867i7a6",
+            "label": "Overlay menu typography",
+            "name": "global_page_fullscreen_menu_text_typo",
+            "type": "ohio_typo",
+            "instructions": "Set up typography styles for fullscreen menu",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59229bda3374d",
+                        "operator": "!=",
+                        "value": "full"
+                    },
+                    {
+                        "field": "field_59229bda317ae",
+                        "operator": "!=",
+                        "value": "style3"
+                    },
+                    {
+                        "field": "field_59229bda317ae",
+                        "operator": "!=",
+                        "value": "style4"
+                    },
+                    {
+                        "field": "field_59229bda317ae",
+                        "operator": "!=",
+                        "value": "style5"
+                    }
+                ]
+            ]
+        },
+        {
+            "key": "field_59374453f44415",
+            "label": "Menu counters",
+            "name": "global_page_header_counters_visibility",
+            "type": "true_false",
+            "instructions": "Show counters on multi-level menu items",
+            "required": 0,
+            "conditional_logic": 0,
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        },
+
+        {
+            "key": "field_593s24s15af5g9t",
+            "label": "<h4>Typography Settings</h4>",
+            "name": "",
+            "type": "message"
+        },
+
+        {
+            "key": "field_59229bda33f44",
+            "label": "Menu typography",
+            "name": "global_page_header_menu_text_typo",
+            "type": "ohio_typo",
+            "instructions": "Set up typography for header",
+            "required": 0,
+            "conditional_logic": 0
+        },
+        {
+            "key": "field_59221bd413bf",
+            "label": "Mobile Menu",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_59374453f124122346236",
+            "label": "Mobile menu initial resolution",
+            "name": "global_page_mobile_menu_initial_resolution",
+            "type": "number",
+            "instructions": "Scroll position when sticky header begins to appear <em>(Use pixels)</em>",
+            "required": 0,
+            "conditional_logic": 0,
+            "default_value": "768",
+            "placeholder": "",
+            "prepend": "",
+            "append": "px",
+            "min": 1,
+            "max": 100000,
+            "step": ""
+        },
+        {
+            "key": "field_59267bda33b33234fd4",
+            "label": "Mobile menu color",
+            "name": "global_page_mobile_header_menu_color",
+            "type": "ohio_color",
+            "instructions": "Choose color for header items",
+            "required": 0,
+            "default_value": ""
+        },
+        {
+            "key": "field_59229bda33b33234fasgbgclrlcfpagjstglgbl64",
+            "label": "Mobile menu background",
+            "name": "global_page_mobile_header_menu",
+            "type": "clone",
+            "instructions": "Choose mobile header background",
+            "required": false,
+            "conditional_logic": false,
+            "clone": [
+                "group_982e082a3bcfcf81b766eaa1ec2df4f11e0f5cd3"
+            ],
+            "display": "group",
+            "layout": "block",
+            "prefix_label": false,
+            "prefix_name": true
+        },
+        {
+            "key": "field_59229bsa3110874uj",
+            "label": "Mobile menu hamburger position",
+            "name": "global_page_header_mobile_menu_position",
+            "type": "select",
+            "instructions": "Choose hamburger position on mobile devices",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59229bda3374d",
+                        "operator": "!=",
+                        "value": "full"
+                    }
+                ]
+            ],
+            "choices": {
+                "left": "Left",
+                "right": "Right"
+            },
+            "default_value": [
+                "left"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5937445364415",
+            "label": "Mobile menu search visibility",
+            "name": "global_page_mobile_search_visibility",
+            "type": "true_false",
+            "instructions": "Show search on mobile menu",
+            "required": 0,
+            "conditional_logic": 0,
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        },
+
+        {
+            "key": "field_593s34s15af5g9t",
+            "label": "<h4>Typography Settings</h4>",
+            "name": "",
+            "type": "message"
+        },
+
+        {
+            "key": "field_59229bda36234d1",
+            "label": "Mobile menu typography",
+            "name": "global_mobile_header_menu_typo",
+            "type": "ohio_typo",
+            "instructions": "Set up typography for mobile menu",
+            "required": 0,
+            "conditional_logic": 0
+        },
+        {
+            "key": "field_59229bda35325",
+            "label": "Subheader",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_59229bda35701",
+            "label": "Subheader visibility",
+            "name": "global_page_subheader_visibility",
+            "type": "true_false",
+            "instructions": "Show subheader on all pages?",
+            "required": 0,
+            "conditional_logic": 0,
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        },
+        {
+            "key": "field_592d3dfbff372",
+            "label": "Subheader height",
+            "name": "global_page_subheader_height",
+            "type": "ohio_responsive_height",
+            "instructions": "Set up subheader height",
+            "required": 0,
+            "conditional_logic": 0,
+            "default_value": ""
+        },
+        {
+            "key": "field_59229bda36adbsubheadasstglgbl64backglb",
+            "label": "Subheader background",
+            "name": "global_page_subheader",
+            "type": "clone",
+            "instructions": "Choose subheader background",
+            "required": false,
+            "conditional_logic": false,
+            "clone": [
+                "group_982e082a3bcfcf81b766eaa1ec2df4f11e0f5cd3"
+            ],
+            "display": "group",
+            "layout": "block",
+            "prefix_label": false,
+            "prefix_name": true
+        },
+        {
+            "key": "field_59229bda366f4",
+            "label": "Content items <em>(left side)</em>",
+            "name": "global_page_subheader_items_left",
+            "type": "repeater",
+            "instructions": "Add content items to subheader",
+            "required": 0,
+            "conditional_logic": 0,
+            "collapsed": "",
+            "min": 0,
+            "max": 20,
+            "layout": "table",
+            "button_label": "+ Add item",
+            "sub_fields": [
+                {
+                    "key": "field_59229bda6c954",
+                    "label": "Items list",
+                    "name": "items",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": 100
+                }
+            ]
+        },
+        {
+            "key": "field_59229bda366f5",
+            "label": "Content items <em>(right side)</em>",
+            "name": "global_page_subheader_items_right",
+            "type": "repeater",
+            "instructions": "Add content items to subheader",
+            "required": 0,
+            "conditional_logic": 0,
+            "collapsed": "",
+            "min": 0,
+            "max": 20,
+            "layout": "table",
+            "button_label": "+ Add item",
+            "sub_fields": [
+                {
+                    "key": "field_59229bda6c955",
+                    "label": "Items list",
+                    "name": "items",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": 100
+                }
+            ]
+        },
+        {
+            "key": "field_59229bdasqw512g",
+            "label": "Currency switcher",
+            "name": "global_woocommerce_header_currency_switcher",
+            "type": "true_false",
+            "instructions": "Enable currency switcher in subheader",
+            "required": 0,
+            "conditional_logic": 0,
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        },
+        {
+            "key": "field_593be8a6dfsa4w",
+            "label": "Language switcher",
+            "name": "global_woocommerce_header_lanhuage_switcher",
+            "type": "true_false",
+            "instructions": "Enable language switcher in subheader",
+            "required": 0,
+            "conditional_logic": 0,
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        },
+
+        {
+            "key": "field_593s35s15af5g9t",
+            "label": "<h4>Typography Settings</h4>",
+            "name": "",
+            "type": "message"
+        },
+
+        {
+            "key": "field_59229bda36ed1",
+            "label": "Subheader typography",
+            "name": "global_page_subheader_text_typo",
+            "type": "ohio_typo",
+            "instructions": "Set up typography for subheader",
+            "required": 0,
+            "conditional_logic": 0
+        },
+        {
+            "key": "field_59229bda372c9",
+            "label": "Page Headline",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_59229bda38e8d",
+            "label": "Page headline visibility",
+            "name": "global_page_header_title_visibility",
+            "type": "true_false",
+            "instructions": "Show page headline on all pages?",
+            "required": 0,
+            "conditional_logic": 0,
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        },
+        {
+            "key": "field_59229bda3868f",
+            "label": "Page headline fullscreen mode",
+            "name": "global_page_header_title_fullscreen",
+            "type": "true_false",
+            "instructions": "Enable fullscreen height for page headline?",
+            "required": 0,
+            "conditional_logic": 0,
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        },
+        {
+            "key": "field_59229bda38a78",
+            "label": "Page headline height",
+            "name": "global_page_header_title_height",
+            "type": "ohio_responsive_height",
+            "instructions": "Set up page headline height",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59229bda3868f",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "default_value": ""
+        },
+        {
+            "key": "field_59229e431eaea",
+            "label": "Page headline alignment",
+            "name": "global_page_header_title_align",
+            "type": "radio",
+            "instructions": "Choose page headline content position",
+            "required": 0,
+            "conditional_logic": 0,
+            "choices": {
+                "left": "Left",
+                "center": "Center",
+                "right": "Right"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "left",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_5922a0ea1eaebgrp",
+            "label": "Page headline background",
+            "name": "global_page_header_title",
+            "type": "clone",
+            "instructions": "Choose the background for pages headline",
+            "required": false,
+            "conditional_logic": false,
+            "clone": [
+                "group_982e082a3bcfcf81b766eaa1ec2df4f11e0f5cd3"
+            ],
+            "display": "group",
+            "layout": "block",
+            "prefix_label": false,
+            "prefix_name": true
+        },
+        {
+            "key": "field_59229bda376e8",
+            "label": "Page headline overlay",
+            "name": "global_page_header_title_use_overlay",
+            "type": "true_false",
+            "instructions": "Add colored overlay over background image?",
+            "required": 0,
+            "conditional_logic": 0,
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        },
+        {
+            "key": "field_59229bda37acf",
+            "label": "Page headline overlay color",
+            "name": "global_page_header_title_overlay_color",
+            "type": "ohio_color",
+            "instructions": "Choose background overlay color",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59229bda376e8",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "default_value": ""
+        },
+        {
+            "key": "field_59229bwjeofwnheof3920",
+            "label": "Page headline parallax",
+            "name": "global_page_header_title_use_parallax",
+            "type": "true_false",
+            "instructions": "Add parallax effect to background image?",
+            "required": 0,
+            "conditional_logic": 0,
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        },
+
+        {
+            "key": "field_5937sc63g152w346",
+            "label": "<h4>Back Link Settings</h4>",
+            "name": "",
+            "type": "message"
+        },
+
+        {
+            "key": "field_5922qef4g4376e8",
+            "label": "Go back button",
+            "name": "global_page_header_previous_button",
+            "type": "true_false",
+            "instructions": "Add back link button to previous page?",
+            "required": 0,
+            "conditional_logic": 0,
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        },
+        {
+            "key": "field_59256hderger8",
+            "label": "Go back button text",
+            "name": "global_page_header_previous_button_text",
+            "type": "text",
+            "instructions": "Add text for previous button",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5922qef4g4376e8",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "message": "",
+            "default_value": "Back",
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        },
+
+        {
+            "key": "field_5937sc62g152w346",
+            "label": "<h4>Typography Settings</h4>",
+            "name": "",
+            "type": "message"
+        },
+
+        {
+            "key": "field_59223452345a3827b",
+            "label": "Go back button typography",
+            "name": "global_page_header_previous_button_typo",
+            "type": "ohio_typo",
+            "instructions": "Set up typography for go back button",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5922qef4g4376e8",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "add_theme_inherited": false
+        },
+        {
+            "key": "field_59229bda3827b",
+            "label": "Title typography",
+            "name": "global_page_header_title_typo",
+            "type": "ohio_typo",
+            "instructions": "Set up typography for hero titles",
+            "required": 0,
+            "conditional_logic": 0
+        },
+        {
+            "key": "field_59229d1dd0a61",
+            "label": "Subtitle typography",
+            "name": "global_page_header_subtitle_typo",
+            "type": "ohio_typo",
+            "instructions": "Set up typography for subtitles",
+            "required": 0,
+            "conditional_logic": 0
+        },
+
+        {
+            "key": "field_5941bd413bf",
+            "label": "Other Settings",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_59229bda3432amods",
+            "label": "Onepage scroll menu",
+            "name": "global_header_onepage_mode",
+            "type": "true_false",
+            "instructions": "Enable onepage scroll menu? Handle anchor links as section scroll trigger. Read more in <a target=\"_blank\" href=\"https://docs.colabr.io/ohio/knowledge-base/smooth-scroll-menu/\">docs</a>.",
+            "required": 0,
+            "conditional_logic": 0,
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        },
+
+        {
+            "key": "field_5937sc63g152s346",
+            "label": "<h4>Search</h4>",
+            "name": "",
+            "type": "message"
+        },
+
+        {
+            "key": "field_592d43df9e26c",
+            "label": "Search visibility",
+            "name": "global_page_header_search_visibility",
+            "type": "true_false",
+            "instructions": "Show search icon on your website",
+            "required": 0,
+            "conditional_logic": 0,
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_592d43df9e212c",
+            "label": "Search type",
+            "name": "global_page_header_search_type",
+            "type": "radio",
+            "instructions": "Choose search type for all pages",
+            "required": 0,
+            "conditional_logic": 0,
+            "choices": {
+                "simple": "Standard",
+                "woo": "WooCommerce AJAX"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "full",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_592d43df9f212c",
+            "label": "Search position",
+            "name": "global_page_header_search_position",
+            "type": "select",
+            "instructions": "Choose search icon position for all pages",
+            "required": 0,
+            "conditional_logic": 0,
+            "choices": {
+                "standard": "Standard position",
+                "fixed": "Fixed position"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "full",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_59267bda33fg234fd4",
+            "label": "Search icon color",
+            "name": "global_page_header_search_color",
+            "type": "ohio_color",
+            "instructions": "Choose color for the fixed search",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_592d43df9f212c",
+                        "operator": "==",
+                        "value": "fixed"
+                    }
+                ]
+            ],
+            "default_value": ""
+        },
+
+        {
+            "key": "field_5937sc63g152s346bth",
+            "label": "<h4>Custom button</h4>",
+            "name": "",
+            "type": "message"
+        },
+
+        {
+            "key": "field_592fe13500c39",
+            "label": "Button in header",
+            "name": "global_custom_button_for_header",
+            "type": "true_false",
+            "instructions": "Enable button in header",
+            "required": 0,
+            "conditional_logic": 0,
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        },
+        {
+            "key": "field_592fe1ar3500c30",
+            "label": "Button text",
+            "name": "global_custom_button_for_header_link",
+            "type": "link",
+            "instructions": "Set up button option",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_592fe13500c39",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "message": "",
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        },
+        {
+            "key": "field_592fe13500c397",
+            "label": "Button background",
+            "name": "global_custom_button_for_header_background",
+            "type": "ohio_color",
+            "instructions": "Choose color for custom button",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_592fe13500c39",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "message": "",
+            "default_value": ""
+        },
+        {
+            "key": "field_592fe13500c399",
+            "label": "Button text color",
+            "name": "global_custom_button_for_header_color",
+            "type": "ohio_color",
+            "instructions": "Choose text color",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_592fe13500c39",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "message": "",
+            "default_value": ""
+        },
+
+        {
+            "key": "field_5937a0a521b81ebmod23",
+            "label": "<h4>WPML Switcher</h4>",
+            "name": "",
+            "type": "message"
+        },
+
+        {
+            "key": "field_592fe13500c38",
+            "label": "WPML language switcher",
+            "name": "global_wpml_show_in_header",
+            "type": "true_false",
+            "instructions": "Enable WPML language switcher",
+            "required": 0,
+            "conditional_logic": 0,
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "theme-general-header"
+            }
+        ]
+    ],
+    "menu_order": 1,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": ""
+}

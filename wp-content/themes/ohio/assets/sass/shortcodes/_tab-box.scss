@@ -1,0 +1,143 @@
+.tab {
+	width: 100%;
+	@include clearfix();
+
+	.tabNav {
+		width: 100%;
+		white-space: nowrap;
+		margin-bottom: 10px;
+		overflow: auto;
+		position: relative;
+		list-style-type: none;
+
+		&_wrapper {
+			width: 100%;
+			position: relative;
+		}
+
+		&:after {
+			content: '';
+			display: table;
+			clear: both;
+		}
+
+		&_line {
+			width: 0;
+			height: 2px;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			padding: 0;
+			@include animate();
+		}
+
+		&_link {
+			width: auto;
+			margin: 0 25px 0 0;
+			padding: 12px 0;
+			font-weight: 600;
+			display: inline-block;
+			clear: none;
+			cursor: pointer;
+			@include animate();
+
+			&.active {
+				font-weight: bold;
+			}
+		}
+	}
+
+	.tabItems {
+		position: relative;
+		transition: height .3s cubic-bezier(.2,.35,.25,1);
+
+		&_item {
+			width: 100%;
+			opacity: 0;
+			overflow: hidden;
+			transition: .2s cubic-bezier(.2,.35,.25,1);
+			transition-property: opacity, visibility;
+			position: absolute;
+			top: 0;
+			left: 0;
+
+			&.active {
+				opacity: 1;
+				overflow: visible;
+				z-index: 2;
+			}
+		}
+	}
+
+	&.filled {
+		background-color: $color_fill_light;
+		padding: 10px 30px 30px 30px;
+		@include border_radius();
+	}
+
+	&.vertical {
+		.tabNav_wrapper {
+			float: left;
+			width: 161px;
+			max-width: 35%;
+			border-bottom: none;
+		}
+
+		.tabNav {
+			overflow: visible;
+			white-space: normal;
+			margin: 0;
+			padding-right: 5px;
+			right: 0;
+
+			.tabNav_line {
+				width: 2px;
+				top: 0;
+				left: auto;
+				right: 0;
+				padding: 0;
+			}
+		}
+
+		.tabNav_link {
+			width: 100%;
+			float: left;
+		}
+
+		.tabItems {
+			width: calc(100% - 180px);
+			min-width: 60%;
+			float: right;
+		}
+
+		.tabItems_item {
+			top: 0;
+			padding-left: 10px;
+		}
+
+		&.filled {
+			padding: 25px 30px;
+
+			.tabNav_wrapper {
+				border-color: rgba(#fff,.3);
+			}
+		}
+	}
+
+	&.tabs-center {
+		.tabNav {
+			text-align: center;
+
+			.tabNav_link {
+				margin-left: 12px;
+				margin-right: 12px;
+			}
+		}
+	}
+
+	&.tabs-right {
+		.tabNav {
+			text-align: right;
+		}
+	}
+}

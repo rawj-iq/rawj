@@ -1,0 +1,449 @@
+{
+    "key": "group_591ac509c1730",
+    "title": "Page Settings",
+    "private": true,
+    "fields": [
+        {
+            "key": "field_591b002d481fc",
+            "label": "General Settings",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5937e0a52b48cexmod153",
+            "label": "",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<p class=\"message\"><span class=\"icon ion-information-circled\"></span> <b>Note:</b> these settings apply to all page elements of your website. You can override some global setting for individual pages.</p>",
+            "new_lines": "",
+            "esc_html": 0
+        },
+        {
+            "key": "field_591ac509d31f3",
+            "label": "Page content wrapper",
+            "name": "global_page_add_wrapper",
+            "type": "true_false",
+            "instructions": "Add content wrapper to all pages",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59381c77504b1",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        },
+        {
+            "key": "field_591ac5s9d31f3",
+            "label": "Page content wrapper width",
+            "name": "global_page_content_wrapper_width",
+            "type": "text",
+            "instructions": "Define the container wrapper width <em>(Default value: 1300px)</em>",
+            "required": 0,
+            "conditional_logic": 0,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "Use CSS units",
+            "append": "",
+            "maxlength": 200
+        },
+        {
+            "key": "field_591b10dbb4a85_fwgaps",
+            "label": "Page full-width layout spacing",
+            "name": "global_page_full_width_margins_size",
+            "type": "text",
+            "instructions": "Define the side margins for full-width page container",
+            "required": 0,
+            "conditional_logic": 0,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "Use CSS units",
+            "append": "",
+            "maxlength": 200
+        },
+        {
+            "key": "field_591ac509d3606",
+            "label": "Page content padding",
+            "name": "global_page_add_top_padding",
+            "type": "true_false",
+            "instructions": "Add top and bottom padding for page content",
+            "required": 0,
+            "conditional_logic": 0,
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No",
+            "message": "",
+            "default_value": 1
+        },
+        {
+            "key": "field_59381c77504b1",
+            "label": "Page boxed layout",
+            "name": "global_page_use_boxed_wrapper",
+            "type": "true_false",
+            "instructions": "Wrap all pages in boxed container",
+            "required": 0,
+            "conditional_logic": 0,
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_591ac509d1208grp",
+            "label": "Page background",
+            "name": "global_page",
+            "type": "clone",
+            "instructions": "Choose the background for all pages",
+            "required": false,
+            "conditional_logic": false,
+            "clone": [
+                "group_982e082a3bcfcf81b766eaa1ec2df4f11e0f5cd3"
+            ],
+            "display": "group",
+            "layout": "block",
+            "prefix_label": false,
+            "prefix_name": true
+        },
+        {
+            "key": "field_591b0f20ed84s",
+            "label": "Sidebar",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_59390deaf218c",
+            "label": "Sidebar visibility",
+            "name": "global_page_sidebar_position",
+            "type": "radio",
+            "instructions": "Enable sidebar on all pages?",
+            "required": 0,
+            "conditional_logic": 0,
+            "choices": {
+                "without": "Disable sidebar",
+                "left": "Left",
+                "right": "Right"
+            },
+            "default_value": [
+                "left"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "layout": "horizontal",
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_59392223423434234c",
+            "label": "Sidebar layout",
+            "name": "global_page_sidebar_layout",
+            "type": "select",
+            "instructions": "Choose sidebar layout",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59390deaf218c",
+                        "operator": "!=",
+                        "value": "without"
+                    }
+                ]
+            ],
+            "choices": {
+                "simple": "Simple",
+                "boxed": "Boxed"
+            },
+            "default_value": [
+                "simple"
+            ],
+            "return_format": "value"
+        },
+
+        {
+            "key": "field_593s45s15af5g9t",
+            "label": "<h4>Typography Settings</h4>",
+            "name": "",
+            "type": "message"
+        },
+
+        {
+            "key": "field_5937e3a33b3exmod15",
+            "label": "Widget heading typography",
+            "name": "global_widgets_heading_typo",
+            "type": "ohio_typo",
+            "instructions": "Set up typography styles for widget heading",
+            "required": 0,
+            "conditional_logic": 0
+        },
+        {
+            "key": "field_5937e3a33f4exmod15",
+            "label": "Widget content typography",
+            "name": "global_widgets_content_typo",
+            "type": "ohio_typo",
+            "instructions": "Set up typography styles for widget content",
+            "required": 0,
+            "conditional_logic": 0
+        },
+        {
+            "key": "field_591b0f20ed84e",
+            "label": "Breadcrumbs",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_591ac509d29ee",
+            "label": "Breadcrumbs visibility",
+            "name": "global_page_breadcrumbs_visibility",
+            "type": "true_false",
+            "instructions": "Show breadcrumbs on all pages?",
+            "required": 0,
+            "conditional_logic": 0,
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        },
+        {
+            "key": "field_591b10dbb4a85",
+            "label": "Breadcrumbs separator",
+            "name": "global_breadcrumbs_separator",
+            "type": "text",
+            "instructions": "Use custom HTML or UTF-8 symbols. Slashes or arrows are recommended",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_591ac509d29ee",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": 250
+        },
+        {
+            "key": "field_591ac509d2e0d",
+            "label": "Breadcrumbs home slug",
+            "name": "global_page_show_home_breadcrumb",
+            "type": "true_false",
+            "instructions": "Show <em>\"Home /\")</em> slug in breadcrumbs",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_591ac509d29ee",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        },
+        {
+            "key": "field_591ac509d1208grpbcbac",
+            "label": "Breadcrumbs background",
+            "name": "global_page_breadcrumbs",
+            "type": "clone",
+            "instructions": "Choose breadcrumbs bar background",
+            "required": false,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_591ac509d29ee",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "clone": [
+                "group_982e082a3bcfcf81b766eaa1ec2df4f11e0f5cd3"
+            ],
+            "display": "group",
+            "layout": "block",
+            "prefix_label": false,
+            "prefix_name": true
+        },
+        {
+            "key": "field_593s35s15af5g9t",
+            "label": "<h4>Typography Settings</h4>",
+            "name": "",
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_591ac509d29ee",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "type": "message"
+        },
+        {
+            "key": "field_591ef10cd845c",
+            "label": "Breadcrumbs typography",
+            "name": "global_page_breadcrumbs_text_typo",
+            "type": "ohio_typo",
+            "instructions": "Choose breadcrumbs typography",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_591ac509d29ee",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ]
+        },
+        {
+            "key": "field_591b0f30ed84e",
+            "label": "Other Settings",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "placement": "top",
+            "endpoint": 0
+        },
+
+        {
+            "key": "field_592s35f15af5g9t",
+            "label": "<h4>Back Smooth Scrolling</h4>",
+            "name": "",
+            "type": "message"
+        },
+
+        {
+            "key": "field_591ac509d4234",
+            "label": "Scroll-to-top",
+            "name": "global_page_show_arrow",
+            "type": "true_false",
+            "instructions": "Show scroll-to-top arrow on all pages",
+            "required": 0,
+            "conditional_logic": 0,
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        },
+        {
+            "key": "field_591ac509d4235",
+            "label": "Scroll-to-top on mobiles",
+            "name": "global_page_show_arrow_mobile",
+            "type": "true_false",
+            "instructions": "Show scroll-to-top arrow on mobile devices",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_591ac509d4234",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        },
+        {
+            "key": "field_591ac509d465a",
+            "label": "Scroll-to-top typography",
+            "name": "global_page_arrow_typo",
+            "type": "ohio_typo",
+            "instructions": "Set up scroll-to-top typography for all pages",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_591ac509d4234",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "theme-general-pages"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": ""
+}

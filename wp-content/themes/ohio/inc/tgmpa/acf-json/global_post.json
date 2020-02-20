@@ -1,0 +1,276 @@
+{
+    "key": "group_592d60af343cfp",
+    "title": "Post Settings",
+    "private": true,
+    "fields": [
+        {
+            "key": "field_592d60ah8a4137",
+            "label": "Elements Visibility",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_592faswe51fv2c",
+            "label": "Custom content position",
+            "name": "global_post_content_position",
+            "type": "select",
+            "instructions": "Choose WPBakery Page Builder page content position",
+            "required": 0,
+            "conditional_logic": 0,
+            "choices": {
+                "top": "Top - Before blog",
+                "bottom": "Bottom - After blog"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "top",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_592d716deeb15",
+            "label": "Related posts",
+            "name": "global_post_related_posts_visibility",
+            "type": "true_false",
+            "instructions": "Show block with related posts?",
+            "required": 0,
+            "conditional_logic": 0,
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_59374a3443d8361523f",
+            "label": "Post tags",
+            "name": "global_post_tags_visibility",
+            "type": "true_false",
+            "instructions": "Show post tags on post pages?",
+            "required": 0,
+            "conditional_logic": 0,
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_59374a3fdf523f",
+            "label": "Post comments",
+            "name": "global_post_comments_visibility",
+            "type": "true_false",
+            "instructions": "Show post comments on post pages?",
+            "required": 0,
+            "conditional_logic": 0,
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_592d714deeb14",
+            "label": "Post navigation",
+            "name": "global_post_previous_n_next_visibility",
+            "type": "true_false",
+            "instructions": "Show <em>\"Prev and next posts\")</em> navigation?",
+            "required": 0,
+            "conditional_logic": 0,
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+
+        {
+            "key": "field_592d60ah8a413k",
+            "label": "Sharing and Author",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "placement": "top",
+            "endpoint": 0
+        },
+
+        {
+            "key": "field_5937433fdf523f",
+            "label": "Sharing visibility",
+            "name": "global_post_social_visibility",
+            "type": "true_false",
+            "instructions": "Enable sharing feature for post pages?",
+            "required": 0,
+            "conditional_logic": 0,
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5937fd3fdf523f",
+            "label": "Sharing networks",
+            "name": "global_post_sharing_networks",
+            "type": "select",
+            "instructions": "Choose sharing social networks",
+            "required": 0,
+            "conditional_logic": [],
+            "choices": {
+                "facebook": "Facebook",
+                "twitter": "Twitter",
+                "linkedin": "LinkedIn",
+                "pinterest": "Pinterest",
+                "vk": "Vkontakte"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 1,
+            "ui": 1,
+            "ajax": 1,
+            "return_format": "value",
+            "placeholder": ""
+        },
+
+        {
+            "key": "field_5937a7a521f81ebmod23",
+            "label": "<h4>Author Settings</h4>",
+            "name": "",
+            "type": "message"
+        },
+
+        {
+            "key": "field_592d716deeb14",
+            "label": "Author visibility",
+            "name": "global_post_author_widget_visibility",
+            "type": "true_false",
+            "instructions": "Show author widget on all post pages?",
+            "required": 0,
+            "conditional_logic": 0,
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5937e0a52b873",
+            "label": "Author social links",
+            "name": "global_author_social_links",
+            "type": "repeater",
+            "instructions": "Add some links to author's social networks",
+            "required": 0,
+            "conditional_logic": 0,
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "+ Add Author",
+            "sub_fields": [
+                {
+                    "key": "field_5937e0a52f6f4",
+                    "label": "Author",
+                    "name": "author",
+                    "type": "user",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "role": "",
+                    "allow_null": 0,
+                    "multiple": 0
+                },
+                {
+                    "key": "field_5937e0a52fac9",
+                    "label": "Links",
+                    "name": "links",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "collapsed": "",
+                    "min": 0,
+                    "max": 0,
+                    "layout": "table",
+                    "button_label": "+ Add Link",
+                    "sub_fields": [
+                        {
+                            "key": "field_5937e0a534d96",
+                            "label": "Social networks",
+                            "name": "social_networks",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "choices": {
+                                "facebook": "Facebook",
+                                "twitter": "Twitter",
+                                "instagram": "Instagram",
+                                "linkedin": "LinkedIn",
+                                "pinterest": "Pinterest",
+                                "youtube": "Youtube",
+                                "foursquare": "Foursquare"
+                            },
+                            "default_value": [
+                                "facebook"
+                            ],
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_5937e0a535178",
+                            "label": "URL",
+                            "name": "url",
+                            "type": "url",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "default_value": "",
+                            "placeholder": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "field_5937e0a52b48c",
+            "label": "",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "message": "<p class=\"message\">Other author's settings you can change here <a href=\"profile.php\">your profile<\/a>.</p>",
+            "new_lines": "",
+            "esc_html": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "theme-general-post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": ""
+}

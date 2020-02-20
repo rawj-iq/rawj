@@ -1,0 +1,451 @@
+
+$social-default-color: $color_dark;
+
+//  classname: color
+$social-colors: (
+	'white': #fff,
+	'facebook': #4c6ecd,
+	'twitter': #44acfe,
+	'pinterest': #e8323f,
+	'linkedin': #4477ab,
+	'dribbble': #fd629e,
+	'github': #323131,
+	'instagram': #3a6aba,
+	'dropbox': #187fe7,
+	'vk': #6083ab,
+	'youtube': #f00,
+	'vimeo': #1ab8ea,
+	'behance': #0056ff,
+	'tumblr': #2a445f,
+	'flickr': #0063db,
+	'reddit': #ff4501,
+	'snapchat': #e0e410,
+	'whatsapp': #0ec143,
+	'quora': #a82401,
+	'vine': #00be8e,
+	'digg': #1c5891,
+	'foursquare': #fa4778
+);
+
+$name: 1;
+
+.socialbar {
+	cursor: default;
+
+	&:not(.inline) {
+		a {
+			color: #fff;
+		}
+		
+		a:before {
+			display: none;
+		}
+	}
+
+	a {
+		background: $social-default-color;
+		width: 46px;
+		height: 46px;
+		line-height: 46px;
+		text-align: center;
+		vertical-align: middle;
+		margin: 4px;
+		border: 1px solid $social-default-color;
+		@include border_radius(50%);
+		display: inline-block;
+		font-size: 20px;
+		cursor: pointer;
+		@include animate();
+
+		span {
+			position: relative;
+			z-index: 2;
+		}
+
+		&:hover {
+			background: transparent;
+			color: $social-default-color;
+		}
+	}
+
+	&.default {
+		a {
+			line-height: 46px;
+		}
+	}
+
+	&.outline {
+		a {
+			background: transparent;
+			border: 1px solid rgba($social-default-color, .5);
+			color: $social-default-color;
+			line-height: 45px;
+
+			&:hover {
+				background: $social-default-color;
+				color: #fff;
+			}
+		}
+
+		&.inverse {
+            a {
+                color: #fff;
+                border-color: $color_light_rgba;
+            }
+	    }
+	}
+
+	&.flat {
+		a {
+			background: transparent;
+			color: $social-default-color;
+			border-color: transparent;
+			line-height: 46px;
+
+			&:hover {
+				background: $social-default-color;
+				color: #fff;
+
+			}
+		}
+
+		&.outline-hover a:hover {
+			background: transparent;
+			border-color: $social-default-color;
+			color: $social-default-color;
+			border-width: 1px;
+		}
+	}
+
+	&.hover-bg-trnspr {
+		a {
+			border-width: 1px !important;
+
+			&:hover {
+				border-color: $social-default-color;
+			}
+		}
+	}
+
+	&.inline {
+		display: block;
+
+		a {
+			background: none;
+			width: auto;
+			height: auto;
+			border: none;
+			margin: 0 10px;
+			line-height: 1.8;
+			font-size: inherit;
+			font-weight: 600;
+			font-family: $font_titles;
+
+			.icon {
+				font-size: 20px;
+				margin-right: 5px;
+				vertical-align: -2px;
+			}
+		}
+	}
+
+	&.flat-icons {
+		a {
+			border-color: transparent;
+
+			&:hover {
+				border-color: $social-default-color;
+			}
+		}
+		
+		&.flat-icons-trnspr a:hover {
+			color: $social-default-color;;
+			background-color: transparent;
+		}
+	}
+
+	&.small {
+		a {
+			width: 40px;
+			height: 40px;
+			line-height: 40px;
+		}
+
+		&.inline a {
+			width: auto;
+			height: auto;
+			margin: 0 10px;
+			line-height: 2.4;
+			font-size: $font_size_small;
+
+			.icon {
+				vertical-align: -1px;
+			}
+		}
+
+		&.default {
+			a {
+				line-height: 38px;	
+			}
+		}
+	}
+
+	&.small.outline a {
+		line-height: 36px;
+	}
+
+	a {
+		&:first-child {
+			margin-left: 0;
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	/*Default colors*/
+	@each $name, $color in $social-colors {
+		&.default {
+			a.#{$name} {
+				background: $color;
+				border-color: $color;
+				border-width: 1px !important;
+				color: #fff;
+
+				&:hover {
+					background: transparent;
+					color: $color;
+					border-color: $color;
+	
+				}
+			}
+
+			&.hover-colorize-reverse {
+				a.#{$name} {
+					background: transparent;
+					color: $color;
+					border-color: $color;
+					border-width: 1px !important;
+					&:hover {
+						background: $color;
+						color: #fff;
+					}
+				}
+			}
+
+			&.outline a.#{$name} {
+				background: transparent;
+				color: $color;
+
+				&:hover {
+					background: $color;
+					color: #fff;
+				}
+			}
+
+			&.flat a.#{$name} {
+				background: transparent;
+				color: $color;
+				border-color: transparent;
+
+				&:hover {
+					background: $color;
+					color: #fff;
+				}
+			}
+
+			&.inline a.#{$name} {
+				background: transparent;
+				border-color: transparent;
+				color: $social-default-color;
+
+				&:hover {
+					color: $color;
+					
+					&:before {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+
+	@each $name, $color in $social-colors {
+		&.hover-default {
+			a.#{$name}:hover {
+				background: transparent;
+				color: $color;
+				border-color: $color;
+			}
+
+			&.outline a.#{$name}:hover {
+				background: $color;
+				color: #fff;
+			}
+
+			&.flat a.#{$name}:hover {
+				background: $color;
+				color: #fff;
+			}
+
+			&.inline a.#{$name}:hover {
+				color: $color;
+			}
+
+			&.inline a.#{$name}:before {
+				background-color: $color;
+			}
+		}
+	}
+
+	&.brand {
+		a {
+			background: $color_brand;
+			border-color: $color_brand;
+
+			&:hover {
+				background: transparent;
+				color: $color_brand;
+			}
+		}
+
+		&.outline a {
+			background: transparent;
+			color: $color_brand;
+
+			&:hover {
+				background: $color_brand;
+				color: #fff;
+			}
+		}
+
+		&.flat a {
+			background: transparent;
+			color: $color_brand;
+			border-color: transparent;
+
+			&:hover {
+				background: $color_brand;
+				color: #fff;
+			}
+		}
+
+		&.inline a {
+			background: transparent;
+			border-color: transparent;
+
+			&:hover {
+				color: $color_brand;
+			}
+		}
+	}
+}
+
+.socialbar.boxed {
+	$sizes: ( 1: 100%, 2: 50%, 3: 33.333%, 4: 25%, 5: 20%, 6: 16.666%, 7: 14.285%, 8: 12.5%, 9: 11.11%, 10: 10%);
+	margin: 0;
+	overflow: hidden;
+
+	@each $column, $width in $sizes {
+		&.social-column-#{$column} {
+			a {
+				width: $width;
+			}
+		}
+	}
+
+	a {
+		background: transparent;
+		color: $color_text;
+		height: 100px;
+		float: left;
+		margin: 0;
+		border: none;
+		@include border_radius(0px);
+		line-height: 100px;
+		vertical-align: middle;
+		position: relative;
+		overflow: hidden;
+
+		.icon {
+			width: 100%;
+			text-align: center;
+			position: absolute;
+			opacity: 0;
+			top: 60%;
+			left: 0;
+			transition: .2s ease-in-out;
+			transition-property: opacity, top;
+		}
+
+		.social-text {
+			font-family: $font_titles;
+			font-size: 0.78em;
+			font-weight: 600;
+			position: relative;
+			top: 0;
+			opacity: 1;
+			@include animate();
+		}
+
+		&:hover {
+			background: $color_fill_light;
+			.icon {
+				opacity: 1;
+				top: 40%;
+			}
+
+			.social-text {
+				opacity: 0;
+				top: -30px;
+			}
+		}
+
+		@each $name, $color in $social-colors {
+			&.default {
+				a.#{$name} {
+					background: $color;
+					border-color: $color;
+
+					&:hover {
+						background: $color;
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+
+	@include sm_screen() {
+		clear: both;
+
+		a {
+			height: 60px;
+			line-height: 60px;
+			font-size: 1.2em;
+
+			.social-text {
+				display: none;
+			}
+
+			.icon {
+				opacity: 1;
+				position: static;
+			}
+		}
+	}
+}
+
+@keyframes toTopFromBottom {
+	59% {
+		transform: translateY(-90%);
+	}
+	60% {
+		opacity: 0;
+		transform: translateY(100%);
+	}
+	61% {
+		opacity: 1;
+	}
+}

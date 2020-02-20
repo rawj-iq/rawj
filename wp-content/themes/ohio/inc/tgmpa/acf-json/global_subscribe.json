@@ -1,0 +1,290 @@
+{
+    "key": "group_591ac509c2mod",
+    "title": "Subscribe Pop-up",
+    "private": true,
+    "fields": [
+        {
+            "key": "field_591b056456481fcffmod",
+            "label": "General Settings",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5222e34430vve4od8",
+            "label": "Subscribe pop-up",
+            "name": "global_subscribe_popup_switch",
+            "type": "true_false",
+            "instructions": "Enable subscribe pop-up",
+            "required": 0,
+            "conditional_logic": 0,
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        },
+        {
+            "key": "field_592fd8901f6jiofnbbbqo",
+            "label": "Subscribe pop-up background",
+            "name": "global_subscribe_popup",
+            "type": "clone",
+            "instructions": "Choose pop-up background",
+            "required": false,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5222e34430vve4od8",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "clone": [
+                "group_982e082a3bcfcf81b766eaa1ec2df4f11e0f5cd3"
+            ],
+            "display": "group",
+            "layout": "block",
+            "prefix_label": false,
+            "prefix_name": true
+        },
+        {
+            "key": "field_5937895484415",
+            "label": "Subscribe pop-up form",
+            "name": "global_subscribe_choice_of_forms",
+            "type": "post_object",
+            "post_type": [
+                "wpcf7_contact_form"
+            ],
+            "instructions": "Choose <a target=\"_blank\" href=\"/wp-admin/admin.php?page=wpcf7\">Contact Form 7</a> form for subscribtion <em>(Use pre-made forms only)</em>",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5222e34430vve4od8",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format" : "id",
+            "placeholder": ""
+        },
+        {
+            "key": "field_592gh23s3500c30",
+            "label": "Subscribe pop-up heading",
+            "name": "global_text_subcribe_popup",
+            "type": "text",
+            "instructions": "Enter heading for your subscribe pop-up",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5222e34430vve4od8",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "default_value": "Subscribe to our newsletter",
+            "message": "",
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        },
+        {
+            "key": "field_592g223s3500c30",
+            "label": "Subscribe pop-up details",
+            "name": "global_details_text_subcribe_popup",
+            "type": "textarea",
+            "instructions": "Enter details about subscription terms",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5222e34430vve4od8",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "default_value": "Sign up to receive updates, promotions, and sneak peaks of upcoming products. Plus 20% off your next order.",
+            "message": "",
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        },
+
+        {
+            "key": "field_592s33s15af5g9t",
+            "label": "<h4>Typography Settings</h4>",
+            "name": "",
+            "type": "message",
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5222e34430vve4od8",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ]
+        },
+
+        {
+            "key": "field_592fgj993827b",
+            "label": "Heading typography",
+            "name": "global_text_subcribe_popup_typo",
+            "type": "ohio_typo",
+            "instructions": "Set up typography styles for subscribe pop-up heading",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5222e34430vve4od8",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "add_theme_inherited": false
+        },
+        {
+            "key": "field_592fg8883827b",
+            "label": "Details typography",
+            "name": "global_details_text_subcribe_popup_typo",
+            "type": "ohio_typo",
+            "instructions": "Set up typography styles for subscribe pop-up details",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5222e34430vve4od8",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "add_theme_inherited": false
+        },
+        {
+            "key": "field_591b056456481scffmod",
+            "label": "Display Settings",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_59229bda31f95_sbscr",
+            "label": "Subscribe pop-up triggers",
+            "name": "global_subscribe_popup_display_trigger",
+            "type": "radio",
+            "instructions": "Select one of the ways to display modal",
+            "required": 0,
+            "conditional_logic": 0,
+            "choices": {
+                "time": "Time",
+                "scroll": "Page scroll",
+                "exit": "Exit intent"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "no",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_3337773s3500c30",
+            "label": "Show pop-up delay",
+            "name": "global_delay_subcribe_popup",
+            "type": "text",
+            "instructions": "Here goes a description",
+            "required": 0,
+            "append":"seconds",
+            "conditional_logic":
+            [
+                [
+                    {
+                        "field": "field_59229bda31f95_sbscr",
+                        "operator": "==",
+                        "value": "time"
+                    }
+                ]
+            ],
+            "message": "",
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        },
+        {
+            "key": "field_58351fsa421j1265",
+            "label": "Show after page scrolled",
+            "name": "global_subscribe_popup_scroll_percent",
+            "type":"text",
+            "instructions": "Here goes a description <mark>[Change This!]</mark>",
+            "required": 0,
+            "append":"%",
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59229bda31f95_sbscr",
+                        "operator": "==",
+                        "value": "scroll"
+                    }
+                ]
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "maxlength": "2",
+            "placeholder": ""
+        },
+        {
+            "key": "field_58383c7ed01ae_sbscr",
+            "label": "Expires",
+            "name": "global_subscribe_popup_expires",
+            "type":"text",
+            "instructions": "After expiry, user will see the subscribe pop-up again",
+            "required": 1,
+            "append":"days",
+            "conditional_logic": 0,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "maxlength": "2",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "theme-general-subscribe"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": ""
+}

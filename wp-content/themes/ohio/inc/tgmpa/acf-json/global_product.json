@@ -1,0 +1,254 @@
+{
+    "key": "group_593be7a6c2017prd",
+    "title": "Product Settings",
+    "private": true,
+    "fields": [
+        {
+            "key": "field_583be7a6d2429",
+            "label": "Product Layout",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_47272c6ed00ae_laytype",
+            "label": "View mode",
+            "name": "global_woocommerce_view_mode",
+            "type": "select",
+            "instructions": "Choose view mode for product pages",
+            "required": 0,
+            "conditional_logic": 0,
+            "choices": {
+                "left": "Left gallery",
+                "right": "Right gallery"
+            },
+            "default_value": [
+                "left"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_593be7a6fas124d437b",
+            "label": "Category slug",
+            "name": "global_woocommerce_page_show_category_breadcrumbs",
+            "type": "true_false",
+            "instructions": "Show product categories in breadcrumbs?",
+            "required": 0,
+            "conditional_logic": 0,
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "1",
+            "layout": "horizontal",
+            "return_format": "value",
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        },
+        {
+            "key": "field_593be7a6d18qlgt",
+            "label": "Lightbox preview",
+            "name": "global_woocommerce_product_lightbox_preview",
+            "type": "true_false",
+            "instructions": "Enable lightbox preview for product page?",
+            "required": 0,
+            "conditional_logic": 0,
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        },
+        {
+            "key": "field_593be8a6d18qlgt",
+            "label": "Sticky product",
+            "name": "global_woocommerce_product_sticky",
+            "type": "true_false",
+            "instructions": "Enable sticky product for product page?",
+            "required": 0,
+            "conditional_logic": 0,
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        },
+        {
+            "key": "field_593be8a6d18930",
+            "label": "Sale tag",
+            "name": "global_woocommerce_product_sale_tag",
+            "type": "true_false",
+            "instructions": "Show sale tag on product page?",
+            "required": 0,
+            "conditional_logic": 0,
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        },
+        {
+            "key": "field_593be8a6d1893b",
+            "label": "SKU",
+            "name": "global_woocommerce_product_sku",
+            "type": "true_false",
+            "instructions": "Show SKU on product page?",
+            "required": 0,
+            "conditional_logic": 0,
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        },
+        {
+            "key": "field_593be8a6d1893c",
+            "label": "Category",
+            "name": "global_woocommerce_product_category",
+            "type": "true_false",
+            "instructions": "Show category on product page?",
+            "required": 0,
+            "conditional_logic": 0,
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        },
+        {
+            "key": "field_593be8a6d1893d",
+            "label": "Tags",
+            "name": "global_woocommerce_product_tags",
+            "type": "true_false",
+            "instructions": "Show tags on product page?",
+            "required": 0,
+            "conditional_logic": 0,
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        },
+        {
+            "key": "field_583be7a6d2429tpg",
+            "label": "Typography Settings",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_593f4haf12422c",
+            "label": "Product title typography",
+            "name": "global_woocommerce_single_product_title_typo",
+            "type": "ohio_typo",
+            "instructions": "Set up typography for simple product titles",
+            "required": 0,
+            "conditional_logic": 0,
+            "add_theme_inherited": false
+        },
+        {
+            "key": "field_592f4aff12422a",
+            "label": "Product price typography",
+            "name": "global_woocommerce_single_product_price_typo",
+            "type": "ohio_typo",
+            "instructions": "Set up typography for simple product price",
+            "required": 0,
+            "conditional_logic": 0,
+            "add_theme_inherited": false
+        },
+        {
+            "key": "field_593f4hff12422b",
+            "label": "Product meta typography",
+            "name": "global_woocommerce_single_product_category_typo",
+            "type": "ohio_typo",
+            "instructions": "Set up typography for product meta",
+            "required": 0,
+            "conditional_logic": 0,
+            "add_theme_inherited": false
+        },
+        {
+            "key": "field_593beba6d4b64",
+            "label": "Other Settings",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_593743w37383615",
+            "label": "Sharing",
+            "name": "global_woocommerce_sharing_visibility",
+            "type": "true_false",
+            "instructions": "Enable sharing feature for product pages?",
+            "required": 0,
+            "conditional_logic": 0,
+            "new_lines": "",
+            "esc_html": 0,
+            "ui": true
+        },
+        {
+            "key": "field_593743e37383615",
+            "label": "Sharing networks",
+            "name": "global_woocommerce_sharing_networks",
+            "type": "select",
+            "instructions": "Choose sharing social networks",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_593743w37383615",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "choices": {
+                "facebook": "Facebook",
+                "twitter": "Twitter",
+                "pinterest": "Pinterest",
+                "linkedin": "LinkedIn",
+                "vk": "Vkontakte"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 1,
+            "ui": 1,
+            "ajax": 1,
+            "return_format": "value",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "theme-general-product"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": ""
+}

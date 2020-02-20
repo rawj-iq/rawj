@@ -1,0 +1,24 @@
+.subscribe-form {
+	width: 100%;
+	position: relative;
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+
+	.btn,
+	input[type="submit"] {
+		margin-top: 0px !important;
+		margin-bottom: 0px !important;
+		white-space: nowrap;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	@include sm_screen {
+
+		.btn,
+		input[type="submit"] {
+			width: auto;
+		}
+	}
+}

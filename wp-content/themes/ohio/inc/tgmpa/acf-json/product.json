@@ -1,0 +1,223 @@
+{
+    "key": "group_59390deae2279_product",
+    "title": "Product Settings",
+    "private": true,
+    "fields": [
+        {
+            "key": "field_59390deaekk1ee3d",
+            "label": "Product Layout",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_47272fda25ype",
+            "label": "View mode",
+            "name": "woocommerce_view_mode",
+            "type": "radio",
+            "instructions": "Choose view mode for product pages",
+            "choices": {
+                "inherit": "Use from Theme Settings",
+                "left": "Left gallery",
+                "right": "Right gallery"
+            },
+            "default_value": [
+                "inherit"
+            ],
+            "return_format": "value", 
+            "layout": "horizontal"
+        },
+        {
+            "key": "field_59390deb03328dsaf1v",
+            "label": "Category slug",
+            "name": "page_show_category_breadcrumbs",
+            "type": "inherited_checkbox",
+            "instructions": "Show product categories in breadcrumbs?",
+            "required": 0,
+            "conditional_logic": 0,
+            "custom_labels": {
+                "inherit": "Theme settings inherited",
+                "yes": "Show",
+                "no": "Hide"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "inherit",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_593dbedc5bqwee1",
+            "label": "Double width",
+            "name": "product_style_in_grid",
+            "type": "radio",
+            "instructions": "Double the width of this product",
+            "required": 0,
+            "conditional_logic": 0,
+            "choices": {
+                "default": "Default - 1-column wide",
+                "2col": "Wide - 2-columns wide"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "default",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_47271241245ype",
+            "label": "Sticky product",
+            "name": "woocommerce_product_sticky",
+            "type": "inherited_checkbox",
+            "instructions": "Enable sticky product for product page?",
+            "custom_labels": {
+                "inherit": "Use from Theme Settings",
+                "yes": "Show",
+                "no": "Hide"
+            },
+            "default_value": "inherit",
+            "return_format": "value", 
+            "layout": "horizontal"
+        },
+        {
+            "key": "field_47271f141245ype",
+            "label": "Sale tag",
+            "name": "woocommerce_product_sale_tag",
+            "type": "inherited_checkbox",
+            "instructions": "Show sale tag on product page?",
+            "custom_labels": {
+                "inherit": "Use from Theme Settings",
+                "yes": "Show",
+                "no": "Hide"
+            },
+            "default_value": "inherit",
+            "return_format": "value", 
+            "layout": "horizontal"
+        },
+        {
+            "key": "field_eq2rf141245ype",
+            "label": "SKU",
+            "name": "woocommerce_product_sku",
+            "type": "inherited_checkbox",
+            "instructions": "Show SKU on product page?",
+            "custom_labels": {
+                "inherit": "Use from Theme Settings",
+                "yes": "Show",
+                "no": "Hide"
+            },
+            "default_value": "inherit",
+            "return_format": "value", 
+            "layout": "horizontal"
+        },
+        {
+            "key": "field_eqcat141245ype",
+            "label": "Category",
+            "name": "woocommerce_product_category",
+            "type": "inherited_checkbox",
+            "instructions": "Show category on product page?",
+            "custom_labels": {
+                "inherit": "Use from Theme Settings",
+                "yes": "Show",
+                "no": "Hide"
+            },
+            "default_value": "inherit",
+            "return_format": "value", 
+            "layout": "horizontal"
+        },
+        {
+            "key": "field_eqtag141245ype",
+            "label": "Tags",
+            "name": "woocommerce_product_tags",
+            "type": "inherited_checkbox",
+            "instructions": "Show tags on product page?",
+            "custom_labels": {
+                "inherit": "Use from Theme Settings",
+                "yes": "Show",
+                "no": "Hide"
+            },
+            "default_value": "inherit",
+            "return_format": "value", 
+            "layout": "horizontal"
+        },
+        {
+            "key": "field_59390deaekk2ee3d",
+            "label": "Typography Settings",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_vqkf4haf12422c",
+            "label": "Product title typography",
+            "name": "woocommerce_single_product_title_typo",
+            "type": "ohio_typo",
+            "instructions": "Set up typography for simple product titles",
+            "required": 0,
+            "conditional_logic": 0,
+            "add_theme_inherited": false
+        },
+        {
+            "key": "field_592f4aff124wen",
+            "label": "Product price typography",
+            "name": "woocommerce_single_product_price_typo",
+            "type": "ohio_typo",
+            "instructions": "Set up typography for simple product price",
+            "required": 0,
+            "conditional_logic": 0,
+            "add_theme_inherited": false
+        },
+        {
+            "key": "field_qwr93f4hff12422b",
+            "label": "Product meta typography",
+            "name": "woocommerce_single_product_category_typo",
+            "type": "ohio_typo",
+            "instructions": "Set up typography for product meta",
+            "required": 0,
+            "conditional_logic": 0,
+            "add_theme_inherited": false
+        },
+        {
+            "key": "field_5940ecs23rfrewdfas",
+            "label": "Widget title text color <mark>New!!!</mark>",
+            "name": "page_footer_widget_title_typo",
+            "type": "ohio_typo",
+            "instructions": "Choose widget title typography",
+            "required": 0,
+            "conditional_logic": 0,
+            "default_value": "inherit",
+            "add_theme_inherited": false
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "product"
+            }
+        ]
+    ],
+    "menu_order": 2,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "discussion",
+        "comments",
+        "author",
+        "format"
+    ],
+    "active": 1,
+    "description": ""
+}

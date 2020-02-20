@@ -1,0 +1,238 @@
+{
+    "key": "group_982e082a3bcfcf81b766eaa1ec2df4f11e0f5cd3",
+    "title": "Background group settings",
+    "private": true,
+    "fields": [
+        {
+            "key": "field_46c28bded161ea112fa99f2ef41c857cb5c6db3b",
+            "label": "",
+            "name": "background_type",
+            "type": "radio",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "choices": {
+                "inherit": "Use from Inherited settings",
+                "color": "Color only",
+                "image": "Image"
+            },
+            "message": "",
+            "layout": "horizontal",
+            "default_value": "inherit"
+        },
+        {
+            "key": "field_f71a874d1a29e0813d847089334dc06aacb34ac2",
+            "label": "Background color",
+            "name": "background_color",
+            "type": "ohio_color",
+            "instructions": "Choose background color",
+            "required": false,
+            "conditional_logic": [
+                [
+                    {
+                    "field": "field_46c28bded161ea112fa99f2ef41c857cb5c6db3b",
+                    "operator": "!=",
+                    "value": "inherit"
+                    }
+                ]
+            ],
+            "default_value": ""
+        },
+        {
+            "key": "field_1926047a4e74b61f21b3c1201dde5b5af779aa83",
+            "label": "Background image",
+            "name": "background_image",
+            "type": "image",
+            "instructions": "Upload image and set up attributes",
+            "required": false,
+            "conditional_logic": [
+                [
+                    {
+                    "field": "field_46c28bded161ea112fa99f2ef41c857cb5c6db3b",
+                    "operator": "==",
+                    "value": "image"
+                    }
+                ]
+            ],
+            "return_format": "url",
+            "preview_size": "medium",
+            "library": "all"
+        },
+        {
+            "key": "field_76eb95f020994e4ae5dfd7c1c5066082c0fae308",
+            "label": "Image size",
+            "name": "background_size",
+            "type": "select",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": [
+                [
+                    {
+                    "field": "field_46c28bded161ea112fa99f2ef41c857cb5c6db3b",
+                    "operator": "==",
+                    "value": "image"
+                    },
+                    {
+                    "field": "field_1926047a4e74b61f21b3c1201dde5b5af779aa83",
+                    "operator": "!=empty"
+                    }
+                ],
+                [
+                    {
+                    "field": "field_46c28bded161ea112fa99f2ef41c857cb5c6db3b",
+                    "operator": "==",
+                    "value": "featured"
+                    }
+                ]
+            ],
+            "choices": {
+                "auto": "Auto",
+                "cover": "Cover",
+                "contain": "Contain",
+                "100_per": "100% 100%"
+            },
+            "default_value": [
+                "auto"
+            ],
+            "allow_null": false,
+            "multiple": false,
+            "ui": false,
+            "ajax": false,
+            "return_format": "value",
+            "placeholder": "",
+            "wrapper": {
+                "width": "",
+                "class": "acf-fields-background-column",
+                "id": ""
+            }
+        },
+        {
+            "key": "field_1353fb07f7f0311d1a9cbb3184ad6662138c570a",
+            "label": "Image position",
+            "name": "background_position",
+            "type": "select",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": [
+                [
+                    {
+                    "field": "field_1926047a4e74b61f21b3c1201dde5b5af779aa83",
+                    "operator": "!=empty"
+                    },
+                    {
+                    "field": "field_46c28bded161ea112fa99f2ef41c857cb5c6db3b",
+                    "operator": "==",
+                    "value": "image"
+                    }
+                ],
+                [
+                    {
+                    "field": "field_46c28bded161ea112fa99f2ef41c857cb5c6db3b",
+                    "operator": "==",
+                    "value": "featured"
+                    }
+                ]
+            ],
+            "choices": {
+                "center": "Center",
+                "left_top": "Left top",
+                "left_center": "Left center",
+                "left_bottom": "Left bottom",
+                "center_top": "Center top",
+                "center_bottom": "Center bottom",
+                "right_top": "Right top",
+                "right_center": "Right center",
+                "right_bottom": "Right bottom"
+            },
+            "default_value": [
+                "center"
+            ],
+            "return_format": "value",
+            "wrapper": {
+                "width": "",
+                "class": "acf-fields-background-column",
+                "id": ""
+            }
+        },
+        {
+            "key": "field_1db3d466c4d3454f11d3fd4042076eb3b3665ba7",
+            "label": "Image repeat type",
+            "name": "background_repeat",
+            "type": "select",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": [
+                [
+                    {
+                    "field": "field_1926047a4e74b61f21b3c1201dde5b5af779aa83",
+                    "operator": "!=empty"
+                    },
+                    {
+                    "field": "field_46c28bded161ea112fa99f2ef41c857cb5c6db3b",
+                    "operator": "==",
+                    "value": "image"
+                    }
+                ],
+                [
+                    {
+                    "field": "field_46c28bded161ea112fa99f2ef41c857cb5c6db3b",
+                    "operator": "==",
+                    "value": "featured"
+                    }
+                ]
+            ],
+            "choices": {
+                "repeat": "Repeat",
+                "no_repeat": "No repeat",
+                "repeat_x": "Repeat only by X",
+                "repeat_y": "Repeat only by Y"
+            },
+            "default_value": [
+                "repeat"
+            ],
+            "return_format": "value",
+            "wrapper": {
+                "width": "",
+                "class": "acf-fields-background-column",
+                "id": ""
+            }
+        },
+        {
+            "key": "field_98064d89cb0abee5d81e75d02b4581eac692578c",
+            "label": "Image attachment",
+            "name": "background_attach",
+            "type": "radio",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_1926047a4e74b61f21b3c1201dde5b5af779aa83",
+                        "operator": "!=empty"
+                    },
+                    {
+                        "field": "field_46c28bded161ea112fa99f2ef41c857cb5c6db3b",
+                        "operator": "==",
+                        "value": "image"
+                    }
+                ]
+            ],
+            "choices": {
+                "false": "Default, scrolling image",
+                "true": "Attach, fixed image"
+            },
+            "layout": "horizontal",
+            "default_value": "false",
+            "inherited": false
+        }
+    ],
+    "location": [],
+    "menu_order": false,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": ""
+}
